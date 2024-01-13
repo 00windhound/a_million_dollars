@@ -50,23 +50,32 @@ border-radius: 6px;
     gap:30px;
     justify-content: center;
 }
-.animals{
+.cards{
     background-color: rgb(214, 207, 249);
     border: 2px solid rgb(110, 110, 110);
     border-radius: 5px;
-    
 }
 .details{
     padding: 5px;
+    position:relative
 }
 .pq{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: blueviolet;
+    background-color: rgb(146, 130, 160);
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    line-height: 15px;
+    align-items: center;
 }
 .pm{
     display: flex;
     height: 25px;
-    gap: 8px;
+    gap: 0px;
+    margin: 6px;
+    position:relative;
+    font-size: 25px;
+    align-items:center;
 }
