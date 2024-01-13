@@ -13,5 +13,4 @@ const animals =[
 document.getElementById('animals').innerHTML= animals
 const lexus = document.getElementById('lexus')
 lexus.addEventListener('click', (account= account-50000))
-accountdisplay.innerHTML=account
 

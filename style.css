@@ -12,11 +12,34 @@ text-decoration: none;
     background-color: hsl(240, 100%, 80%);
     position:absolute;
     box-shadow: 3px 3px 4px black;
-    display:none
+    display:none;
 }
 .cars:hover .carlist{
-display:block
+display:block;
 }
 .cars{
-    display: inline-block
+    display: inline-block;
+}
+header{
+    background-color:darkgrey;
+    padding: 25px 60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#cartbutton{
+    background-color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px;
+}
+.quantity{
+font-size: 16px;
+background-color: rgb(165, 49, 204);
+position:absolute;
+top: -15px;
+right: -10px;
+padding: 9px;
+border-radius: 6px;
 }
