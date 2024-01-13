@@ -61,6 +61,12 @@ border-radius: 6px;
 }
 .pq{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    background-color: blueviolet;
+}
+.pm{
+    display: flex;
+    height: 25px;
+    gap: 8px;
 }
