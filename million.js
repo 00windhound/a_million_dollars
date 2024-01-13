@@ -10,7 +10,7 @@ const animals =[
 {name:'lion', img:'pics/lillion.png'},
 {name:'snake', img:'pics/lilsnake.png'},
 ]
-document.getElementById('animals').innerHTML= animals
+
 const lexus = document.getElementById('lexus')
 lexus.addEventListener('click', (account= account-50000))
 

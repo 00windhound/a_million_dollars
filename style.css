@@ -26,6 +26,7 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 #cartbutton{
     background-color: white;
@@ -34,7 +35,7 @@ header{
     position: relative;
     padding: 15px;
 }
-.quantity{
+.totquantity{
 font-size: 16px;
 background-color: rgb(165, 49, 204);
 position:absolute;
@@ -42,4 +43,24 @@ top: -15px;
 right: -10px;
 padding: 9px;
 border-radius: 6px;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,224px);
+    gap:30px;
+    justify-content: center;
+}
+.animals{
+    background-color: rgb(214, 207, 249);
+    border: 2px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    
+}
+.details{
+    padding: 5px;
+}
+.pq{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
