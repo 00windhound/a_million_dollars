@@ -50,6 +50,15 @@ border-radius: 6px;
     gap:30px;
     justify-content: center;
 }
+@media (max-width:1000px){
+    .shop{ grid-template-columns: repeat(3, 223px);}
+}
+@media (max-width:750px ){
+    .shop{ grid-template-columns: repeat(2, 223px);}
+}
+@media (max-width: 500px){
+    .shop{ grid-template-columns: repeat(1, 223px);}
+}
 .cards{
     background-color: rgb(214, 207, 249);
     border: 2px solid rgb(110, 110, 110);
