@@ -5,32 +5,32 @@ accountdisplay.innerHTML=account
 let shop = document.getElementById('shop');
 
 let shopcarddata =[
-    {id: "1", 
+    {id: "101", 
     name:"lion", 
     price: 6000, 
     img: "pics/lillion.png",
     description: "show that your the king with this powerfull beast! keep in mind the upkeep and possibly a great life insurance policy."},
 
-    {id: "2",
+    {id: "102",
     name:"flamingo", 
     price: 3000, 
     img: "pics/lilflamingo.png",
     description: "elegant bird is the perfect addition for a backyard pond"},
 
-    {id: "3",
+    {id: "103",
     name: "snake",
     price: 100,
     img: "pics/lilsnake.png",
     description: "for the reptyle lovers, our snakes are docile and have vivid colors. can be fed live or frozen food."},
 
-    {id: "4",
+    {id: "104",
     name: "bunny",
     price: 25,
     img: "pics/lilbunny.png",
     description:"adorable, easy, and kids love it"},
 ]
 
-let basket = []
+let basket = [];
 
 
 let generateshop =()=>{
@@ -66,7 +66,8 @@ let inc = (id) => {
         basket.push({id: selectedid.id, item: 1})}
     else{
         search.item += 1;}
-        update(selectedid.id);
+       update(selectedid.id);
+    console.log(basket);
 };
 
 let dec = (id) => {
@@ -75,10 +76,11 @@ let dec = (id) => {
     if(search.item === 0)return;
     else{
         search.item -= 1;}
-        update(selectedid.id);
+       update(selectedid.id);
+    console.log(basket);
 };
 
 let update = (id) => {
 let search = basket.find((x)=> x.id === id);
-document.getElementById(id).innerHTML =search.item
+document.getElementById(id).innerHTML =search.item;
 };
