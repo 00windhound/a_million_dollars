@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
 button{
     cursor: pointer;
 }
@@ -63,10 +71,18 @@ border-radius: 6px;
     background-color: rgb(214, 207, 249);
     border: 2px solid rgb(110, 110, 110);
     border-radius: 5px;
+    max-height: 370px;
+    height: 100%;
 }
+#cardcontainer{
+    min-height: 100%; max-height: 370px;
+}
+#cardmain{overflow: auto; padding-bottom: 37px;}
 .details{
     padding: 5px;
-    position:relative
+    position:relative;
+    max-height: 106px; min-height: 106px;
+
 }
 .pq{
     display: flex;
@@ -78,6 +94,8 @@ border-radius: 6px;
     font-size: 20px;
     line-height: 15px;
     align-items: center;
+
+    position: relative; height: 37px; margin-top: -37px; clear:both;
 }
 .pm{
     display: flex;
