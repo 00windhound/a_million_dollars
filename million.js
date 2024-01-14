@@ -46,9 +46,9 @@ let generateshop =()=>{
             <div class="pq">
                 <h2>$ ${price}</h2>
                 <div class="pm">
-                 <button onclick="dec(${id})" id="minus">-</button>
-                 <div id=${id}id="quantity">0</div>
-                 <button onclick="inc(${id})" id="plus">+</button>
+                 <button  id="minus">-</button>
+                 <div >0</div>
+                 <button  id="plus">+</button>
                 </div>
             </div>
         </div>
@@ -59,7 +59,16 @@ let generateshop =()=>{
 
 generateshop();
 
-let inc = (id) => {
+
+
+
+
+
+
+
+
+
+/*let inc = (id) => {
     let selectedid= id;
     let search = basket.find((x) => x.id === selectedid.id);
     if(search === undefined){
@@ -83,4 +92,4 @@ let dec = (id) => {
 let update = (id) => {
 let search = basket.find((x)=> x.id === id);
 document.getElementById(id).innerHTML =search.item;
-};
+};*/
