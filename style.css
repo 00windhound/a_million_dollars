@@ -108,3 +108,8 @@ border-radius: 6px;
     font-size: 25px;
     align-items:center;
 }
+.pm button{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(214, 207, 249) ;
+}

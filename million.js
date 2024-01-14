@@ -3,6 +3,7 @@ let account= 1000000
 accountdisplay.innerHTML=account
 
 let shop = document.getElementById('shop');
+
 let shopcarddata =[
     {id: "1", 
     name:"lion", 
@@ -29,6 +30,9 @@ let shopcarddata =[
     description:"adorable, easy, and kids love it"},
 ]
 
+let basket = []
+
+
 let generateshop =()=>{
     return (shop.innerHTML= shopcarddata.map((x)=>{
         let { id, name, price, img, description}=x;
@@ -42,9 +46,9 @@ let generateshop =()=>{
             <div class="pq">
                 <h2>$ ${price}</h2>
                 <div class="pm">
-                 <button id="minus">-</button>
+                 <button onclick="dec(${id})" id="minus">-</button>
                  <div id=${id}id="quantity">0</div>
-                 <button id="plus">+</button>
+                 <button onclick="inc(${id})" id="plus">+</button>
                 </div>
             </div>
         </div>
@@ -54,3 +58,27 @@ let generateshop =()=>{
 };
 
 generateshop();
+
+let inc = (id) => {
+    let selectedid= id;
+    let search = basket.find((x) => x.id === selectedid.id);
+    if(search === undefined){
+        basket.push({id: selectedid.id, item: 1})}
+    else{
+        search.item += 1;}
+        update(selectedid.id);
+};
+
+let dec = (id) => {
+    let selectedid= id;
+    let search = basket.find((x) => x.id === selectedid.id);
+    if(search.item === 0)return;
+    else{
+        search.item -= 1;}
+        update(selectedid.id);
+};
+
+let update = (id) => {
+let search = basket.find((x)=> x.id === id);
+document.getElementById(id).innerHTML =search.item
+};
