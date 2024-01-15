@@ -87,6 +87,7 @@ let update = (id) => {
     document.getElementById(id).innerHTML = search.item;
 };
 
+let calculation = ()=>{}
 
 
 
