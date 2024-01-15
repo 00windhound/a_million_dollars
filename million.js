@@ -5,25 +5,25 @@ accountdisplay.innerHTML=account
 let shop = document.getElementById('shop');
 
 let shopcarddata =[
-    {id: "101", 
+    {id: "animalslion", 
     name:"lion", 
     price: 6000, 
     img: "pics/lillion.png",
     description: "show that your the king with this powerfull beast! keep in mind the upkeep and possibly a great life insurance policy."},
 
-    {id: "102",
+    {id: "animalsflamingo",
     name:"flamingo", 
     price: 3000, 
     img: "pics/lilflamingo.png",
     description: "elegant bird is the perfect addition for a backyard pond"},
 
-    {id: "103",
+    {id: "animalssnake",
     name: "snake",
     price: 100,
     img: "pics/lilsnake.png",
     description: "for the reptyle lovers, our snakes are docile and have vivid colors. can be fed live or frozen food."},
 
-    {id: "104",
+    {id: "animalsbunny",
     name: "bunny",
     price: 25,
     img: "pics/lilbunny.png",
@@ -46,9 +46,9 @@ let generateshop =()=>{
             <div class="pq">
                 <h2>$ ${price}</h2>
                 <div class="pm">
-                 <button  id="minus">-</button>
-                 <div >0</div>
-                 <button  id="plus">+</button>
+                 <button onclick="decrement(${id})" class="minus">-</button>
+                 <div id=${id} class="quantity" >0</div>
+                 <button onclick="increment(${id})" class="plus">+</button>
                 </div>
             </div>
         </div>
@@ -59,10 +59,33 @@ let generateshop =()=>{
 
 generateshop();
 
+let increment = (id) => {
+    let selecteditem = id;
+    let search = basket.find((x)=> x.id === selecteditem.id);
+    if(search === undefined){
+    basket.push({
+        id: selecteditem.id,
+        item: 1,
+    })}
+    else{search.item += 1;}
+   /* console.log(basket);*/
+    update(selecteditem.id);
+};
 
+let decrement = (id) => {
+    let selecteditem = id;
+    let search = basket.find((x)=> x.id === selecteditem.id);
+    if(search.item === 0 || search.item === undefined)return;
+    else{ search.item -= 1;}
+    /*console.log(basket);*/
+    update(selecteditem.id);
+};
 
-
-
+let update = (id) => {
+    let search = basket.find((x)=> x.id === id);
+    console.log(search);
+    document.getElementById(id).innerHTML = search.item;
+};
 
 
 
