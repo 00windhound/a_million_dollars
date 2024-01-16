@@ -6,8 +6,7 @@ quickly realizing every little step can be broken down into a bunch more steps a
 dropdown menue by click. 
 drop down box shows buttons with name and price
 click pushes the item to cart array. items should be written in js to move easily while still display right in the page.
-maybe cereal numbers? html has all the pictures and stuff but when it goes to cart it just takes the cereal and goes from there?
 
-unsplash.com  free images, icon.getbootstrap for free icons
 
-so everything seems easy to understand except im getting an error that i cant even begin to solve, maybe im not understanding this as much as i need to. 
+
+so everything seems easy to understand except im getting an error that i cant even begin to solve, maybe im not understanding this as much as i need to.
