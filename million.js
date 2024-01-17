@@ -28,6 +28,18 @@ let shopcarddata =[
     price: 25,
     img: "pics/lilbunny.png",
     description:"adorable, easy, and kids love it"},
+   
+    {id:"animalscheetah",
+    name: "cheetah",
+    price: 50000,
+    img:"pics/cheetah.jpg",
+    description:"beautiful, great for racing, cubs can even be kind of tamed."},
+    
+    {id:"animalsseahorse",
+    name:"seahorse",
+    price: 1000,
+    img:"pics/seahorse.jpg",
+    description: "price includes the tank and basic equipment."}
 ]
 
 let basket = [];
