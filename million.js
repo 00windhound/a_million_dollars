@@ -26,7 +26,7 @@ let shopcarddata =[
     {id: "animalsbunny",
     name: "bunny",
     price: 25,
-    img: "pics/lilbunny.png",
+    img: "pics/bunny.jpg",
     description:"adorable, easy, and kids love it"},
    
     {id:"animalscheetah",
@@ -39,7 +39,13 @@ let shopcarddata =[
     name:"seahorse",
     price: 1000,
     img:"pics/seahorse.jpg",
-    description: "price includes the tank and basic equipment."}
+    description: "price includes the tank and basic equipment."},
+
+    {id:"animalshorse",
+    name:"horse",
+    price: 7000,
+    img:"pics/horses.jpg",
+    description: "beautiful horses. many breeds and colors.  great quality and temperment, raised to be family pets. many are broke to ride, though for fulls or yearlings you're on your own."}
 ]
 
 let basket = [];
