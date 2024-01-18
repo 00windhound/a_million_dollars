@@ -103,9 +103,13 @@ let update = (id) => {
     let search = basket.find((x)=> x.id === id);
     console.log(search);
     document.getElementById(id).innerHTML = search.item;
+    calculation();
 };
 
-let calculation = ()=>{}
+let calculation = ()=>{
+    let carticon = document.getElementById("totquantity");
+    console.log( basket.map((x)=> x.item ).reduce((x,y)=> x + y, 0)); // totquantity
+};
 
 
 
