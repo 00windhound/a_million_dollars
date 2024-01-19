@@ -108,14 +108,16 @@ let decrement = (id) => {
 
 let update = (id) => {
     let search = basket.find((x)=> x.id === id);
-    console.log(search);
+    //console.log(search);
     document.getElementById(id).innerHTML = search.item;
     calculation();
 };
 
 let calculation = ()=>{
-    let carticon = document.getElementById("totquantity");
-    console.log( basket.map((x)=> x.item ).reduce((x,y)=> x + y, 0)); // did not want to work for me.
+    let carticon = document.getElementsByClassName("totquantity");
+   // console.log( basket.map((x)=> x.item ).reduce((x,y)=> x + y, 0)); // did not want to work for me.
+console.log(cart);
+carticon.innerHTML = (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
 };
 
 
