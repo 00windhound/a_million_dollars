@@ -17,7 +17,7 @@ console.log(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
 };
 calculation();
 
-/*let generatecart =()=>{
+let generatecart =()=>{
     if(basket.length !== 0){
         console.log("data!!!")
     }
@@ -28,4 +28,4 @@ calculation();
                             <button id="backtoshop">back to shop</button> </a>`
     }
 }
-generatecart(); */
+generatecart(); 

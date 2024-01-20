@@ -9,11 +9,11 @@ let shop = document.getElementById('shop');
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
 
 
-let generateshop =()=>{ console.log("generate shop running");//added test
+let generateshop =()=>{ 
     return (shop.innerHTML= shopcarddata.map((x)=>{
         let { id, name, price, img, alternate, description}=x;
-        let search = basket.find((x)=>x.id ===id) || [] //added test in html
-        return `<h3> wirking</h3>
+        let search = basket.find((x)=>x.id ===id) || [] 
+        return `
         <div id=productid${id} class="cards"><div id="cardcontainer"><div id="cardmain">
         <img width="220" alt="${alternate}" src=${img}>
         <div class="details">
@@ -68,7 +68,7 @@ let update = (id) => {
     calculation();
 };
 
-let calculation = ()=>{ console.log("calculation running") // added a test
+let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
    // console.log( basket.map((x)=> x.item ).reduce((x,y)=> x + y, 0)); // did not want to work for me.
 
