@@ -20,6 +20,7 @@ calculation();
 let generatecart =()=>{
     if(basket.length !== 0){
         console.log("data!!!")
+        return shoppingcart.innerHTML= basket.map((x)=>{})
     }
     else{
         shoppingcart.innerHTML = ``;
