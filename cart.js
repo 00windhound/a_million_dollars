@@ -19,8 +19,13 @@ calculation();
 
 let generatecart =()=>{
     if(basket.length !== 0){
-        console.log("data!!!")
-        return shoppingcart.innerHTML= basket.map((x)=>{})
+       // console.log("data!!!")
+        return (shoppingcart.innerHTML= basket.map((x)=> 
+        {let {id,item}= x;
+        let search = shopcarddata.find((y)=>y.id === id) || []
+            return `<div class="shoppingcart">
+        <img src="" alt="" />
+        </div>`}).join(""));
     }
     else{
         shoppingcart.innerHTML = ``;
