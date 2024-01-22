@@ -4,7 +4,7 @@ accountdisplay.innerHTML= account;
 
 let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
-let basket = JSON.parse(localStorage.getItem("joy") || []);
+let basket = JSON.parse(localStorage.getItem("joy")) || [];
 console.log(basket)
 let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
@@ -22,9 +22,9 @@ let generatecart =()=>{
        // console.log("data!!!")
         return (shoppingcart.innerHTML= basket.map((x)=> 
         {let {id,item}= x;
-        let search = shopcarddata.find((y)=>y.id === id) || []
+        let search = shopcarddata.find((y)=>y.id === id) || [];
             return `<div class="shoppingcart">
-        <img src="" alt="" />
+        <img src=${search.img} alt="" />
         </div>`}).join(""));
     }
     else{
