@@ -24,22 +24,20 @@ let generatecart =()=>{
         {let {id,item}= x;
         let search = shopcarddata.find((y)=>y.id === id) || [];
             return `
-        <div id=productid${search.id} class="cards";><div id="cardcontainer"><div id="cardmain">
-        <img width="220" alt="${search.alternate}" src=${search.img}>
-        <div class="details">
-            <h3>${search.name}</h3>
-            <p>${search.description}</p>
-            </div></div>
-            <div class="pq">
-                <h2>$ ${search.price}</h2>
-                <div class="pm">
-                 <button onclick="decrement(${search.id})" class="minus">-</button>
-                 <div id=${search.id} class="quantity" >${search.item === undefined ? 0: search.item}</div>
-                 <button onclick="increment(${search.id})" class="plus">+</button>
+            <div class="cartitem">
+                <img width="100px" src=${search.img} alt="${search.alternate}/>
+                <div class="details">
+                    <div class="titleprice">
+                        <h4> <p>${search.name}</p> 
+                        <p>$ ${search.price}</p>
+                        </h4>
+                        <button class="delete">delete</button>
+                    </div>
+                    <div class="cartbuttons"></div>
+                    <h3></h3>
                 </div>
             </div>
-        </div>
-    </div>`}).join(""));
+       `}).join(""));
     }
     else{
         shoppingcart.innerHTML = ``;

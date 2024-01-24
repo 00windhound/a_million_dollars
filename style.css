@@ -108,3 +108,11 @@ border-radius: 6px;
     text-shadow: 3px 3px 7px rgb(65, 65, 65);}
 #backtoshop{text-align: center; margin-top: 15px; font-size: 30px; background-color: rgb(22, 22, 22); color: white;
     border: none; border-radius: 4px; padding: 6px;}
+.shoppingcart{
+    display: grid;
+    grid-template-columns: repeat(2, 320);
+    justify-content: center;
+}
+.cartitem{
+    border: 2px solid rgb(110, 110, 110);
+}
