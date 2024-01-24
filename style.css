@@ -112,7 +112,17 @@ border-radius: 6px;
     display: grid;
     grid-template-columns: repeat(2, 320);
     justify-content: center;
+    gap:15px;
 }
 .cartitem{
     border: 2px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    display: flex;
+}
+.titleprice{
+display: flex;
+align-items: center;
+justify-content: space-between;
+border: 2px solid red;
+width: 195px;
 }
