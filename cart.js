@@ -28,13 +28,19 @@ let generatecart =()=>{
                 <img width="100px" src=${search.img} alt="${search.alternate}/>
                 <div class="details">
                     <div class="titleprice">
-                        <h4> <p>${search.name}</p> 
-                        <p>$ ${search.price}</p>
+                        <h4 class="title"> <p>${search.name}</p> 
+                        <p class="itemp">$ ${search.price}</p>
                         </h4>
-                        <button class="delete">delete</button>
-                    </div>
-                    <div class="cartbuttons"></div>
+                       
+                    
+                    <div class="pm">
+                        <button onclick="decrement(${id})" class="minus">-</button>
+                        <div id=${id} class="quantity">${item}</div>
+                        <button onclick="increment(${id})" class="plus">+</button>
+                        </div>
+                     <button class="delete">delete</button>
                     <h3></h3>
+                </div>
                 </div>
             </div>
        `}).join(""));
