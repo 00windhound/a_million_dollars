@@ -39,8 +39,9 @@ let generatecart =()=>{
                         <button onclick="increment(${id})" class="plus">+</button>
                         </div>
                      <button class="delete">delete</button>
-                    <h3></h3>
-                </div>
+                     </div>
+                    <h3>$ ${item*search.item}</h3>
+                
                 </div>
             </div>
        `}).join(""));
@@ -53,3 +54,37 @@ let generatecart =()=>{
     }
 }
 generatecart(); 
+
+
+let increment = (id) => {
+    let selecteditem = id;
+    let search = basket.find((x)=> x.id === selecteditem.id);
+    if(search === undefined){
+    basket.push({
+        id: selecteditem.id,
+        item: 1,
+    })}
+    else{search.item += 1;}
+    localStorage.setItem("joy",JSON.stringify(basket))
+   /* console.log(basket);*/
+    update(selecteditem.id);
+};
+
+let decrement = (id) => {
+    let selecteditem = id;
+    let search = basket.find((x)=> x.id === selecteditem.id);
+    if(search === undefined) return;
+    else if(search.item === 0) return;
+    else{ search.item -= 1;}
+    update(selecteditem.id);
+    basket = basket.filter((x)=>x.item !== 0);
+    localStorage.setItem("joy",JSON.stringify(basket));
+    generatecart();
+};
+
+let update = (id) => {
+    let search = basket.find((x)=> x.id === id);
+    //console.log(search);
+    document.getElementById(id).innerHTML = search.item;
+    calculation();
+};
