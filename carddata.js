@@ -18,7 +18,7 @@ let animalsdata =[
     price: 100,
     img: "pics/snake.jpg",
     alternate: "an AI python snake.",
-    description: "for the reptyle lovers, our snakes are docile and have vivid colors. can be fed live or frozen food."},
+    description: "for the reptile lovers, our snakes are docile and have vivid colors. can be fed live or frozen food."},
 
     {id: "animalsbunny",
     name: "bunny",

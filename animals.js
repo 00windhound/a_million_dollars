@@ -1,3 +1,4 @@
+
 let accountdisplay = document.getElementById('account')
 let account= 1000000
 accountdisplay.innerHTML=account;
@@ -8,8 +9,8 @@ let basket = JSON.parse(localStorage.getItem("joy")) || [];
 
 let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
-
-console.log(basket)
+let carticon = document.getElementById('totquantity')
+//console.log(basket)
 
 
 
@@ -18,7 +19,7 @@ console.log(basket)
 
 let generateshop =()=>{ 
     return (shop.innerHTML= animalsdata.map((x)=>{
-        let { id, name, price, img, alternate, description}=x;
+        let { id, name, price, img, alternate, description}=x; // error in the cart
         let search = basket.find((x)=>x.id ===id) || [] 
         return `
         <div id=productid${id} class="cards"><div id="cardcontainer"><div id="cardmain">
@@ -79,18 +80,22 @@ let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
    // console.log( basket.map((x)=> x.item ).reduce((x,y)=> x + y, 0)); // did not want to work for me.
 
-    carticon.innerHTML = (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
-    console.log(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
-    //need to fix this so it shows the number on the icon.
+   // carticon.innerHTML= (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
+
+  //=(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
+   console.log(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
+    
+   //need to fix this so it shows the number on the icon.
 };
 
 calculation();
 
 let generatecart =()=>{
-    
+    console.log(basket);
+    console.log("trying cart..")
     if(basket.length !== 0){
-       // console.log("data!!!")
-        return (shoppingcart.innerHTML= basket.map((x)=> 
+       console.log("data!!!")
+        return (shoppingcart.innerHTML= basket.map((x)=> //error this gives me an error in the shop
         {let {id,item}= x;
         let search = animalsdata.find((y)=>y.id === id) || [];
             return `
@@ -123,5 +128,4 @@ let generatecart =()=>{
                             <button id="backtoshop">back to shop</button> </a>`
     }
 }
-generatecart();
 
