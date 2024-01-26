@@ -1,16 +1,23 @@
 let accountdisplay = document.getElementById('account')
 let account= 1000000
-accountdisplay.innerHTML=account
+accountdisplay.innerHTML=account;
 localStorage.setItem("monies",JSON.stringify(account))
+
 let shop = document.getElementById('shop');
-
-
-
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
+
+let label = document.getElementById("label");
+let shoppingcart= document.getElementById("shoppingcart");
+
+console.log(basket)
+
+
+
+
 
 
 let generateshop =()=>{ 
-    return (shop.innerHTML= shopcarddata.map((x)=>{
+    return (shop.innerHTML= animalsdata.map((x)=>{
         let { id, name, price, img, alternate, description}=x;
         let search = basket.find((x)=>x.id ===id) || [] 
         return `
@@ -84,7 +91,7 @@ let generatecart =()=>{
        // console.log("data!!!")
         return (shoppingcart.innerHTML= basket.map((x)=> 
         {let {id,item}= x;
-        let search = shopcarddata.find((y)=>y.id === id) || [];
+        let search = animalsdata.find((y)=>y.id === id) || [];
             return `
             <div class="cartitem">
                 <img width="100px" src=${search.img} alt="${search.alternate}/>
@@ -115,16 +122,4 @@ let generatecart =()=>{
                             <button id="backtoshop">back to shop</button> </a>`
     }
 }
-generatecart();
 
-
-let accountdisplay = document.getElementById("account");
-account= JSON.parse(localStorage.getItem("monies"))
-accountdisplay.innerHTML= account;
-
-let label = document.getElementById("label");
-let shoppingcart= document.getElementById("shoppingcart");
-
-console.log(basket)
-
-calculation();

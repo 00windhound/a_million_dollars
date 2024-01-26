@@ -1,4 +1,4 @@
-let shopcarddata =[
+let animalsdata =[
     {id: "animalslion", 
     name:"lion", 
     price: 6000, 
