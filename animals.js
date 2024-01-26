@@ -87,6 +87,7 @@ let calculation = ()=>{
 calculation();
 
 let generatecart =()=>{
+    
     if(basket.length !== 0){
        // console.log("data!!!")
         return (shoppingcart.innerHTML= basket.map((x)=> 
@@ -122,4 +123,5 @@ let generatecart =()=>{
                             <button id="backtoshop">back to shop</button> </a>`
     }
 }
+generatecart();
 

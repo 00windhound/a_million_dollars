@@ -16,8 +16,8 @@ let animalsdata =[
     {id: "animalssnake",
     name: "snake",
     price: 100,
-    img: "pics/lilsnake.png",
-    alternate: "a crappy snake drawing",
+    img: "pics/snake.jpg",
+    alternate: "an AI python snake.",
     description: "for the reptyle lovers, our snakes are docile and have vivid colors. can be fed live or frozen food."},
 
     {id: "animalsbunny",
