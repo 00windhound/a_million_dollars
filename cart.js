@@ -6,11 +6,12 @@ let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
 console.log(basket)
+
 let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
    // console.log( basket.map((x)=> x.item ).reduce((x,y)=> x + y, 0)); // did not want to work for me.
 
-carticon.innerHTML = (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
+carticon[0].innerHTML = (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
 console.log(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
 
 //need to fix this so it shows the number on the icon.
@@ -22,7 +23,7 @@ let generatecart =()=>{
        // console.log("data!!!")
         return (shoppingcart.innerHTML= basket.map((x)=> 
         {let {id,item}= x;
-        let search = shopcarddata.find((y)=>y.id === id) || [];
+        let search = shopcarddata.find((y)=>y.id === id) || []; //error with shopcarddata
             return `
             <div class="cartitem">
                 <img width="100px" src=${search.img} alt="${search.alternate}/>
@@ -33,7 +34,7 @@ let generatecart =()=>{
                         </h4>
                        
                     
-                    <div class="pm">
+                        <div class="pm">
                         <button onclick="decrement(${id})" class="minus">-</button>
                         <div id=${id} class="quantity">${item}</div>
                         <button onclick="increment(${id})" class="plus">+</button>
