@@ -2,16 +2,9 @@ let animalsdata =[
     {id: "animalslion", 
     name:"lion", 
     price: 6000, 
-    img: "pics/lillion.png",
-    alternate:"a quick doodle of a lion",
+    img: "pics/ailion.jpg",
+    alternate:"image of an AI lion",
     description: "show that your the king with this powerfull beast! keep in mind the upkeep and possibly a great life insurance policy."},
-
-    {id: "animalsflamingo",
-    name:"flamingo", 
-    price: 3000, 
-    img: "pics/lilflamingo.png",
-    alternate:"a quick flamingo drawing",
-    description: "elegant bird is the perfect addition for a backyard pond"},
 
     {id: "animalssnake",
     name: "snake",
@@ -37,7 +30,7 @@ let animalsdata =[
     {id:"animalsseahorse",
     name:"seahorse",
     price: 1000,
-    img:"pics/seahorse.jpg",
+    img:"pics/aiseahorse.jpg",
     alternate:"picture of a pink seahorse against purple corals",
     description: "price includes the tank and basic equipment."},
 
@@ -46,5 +39,54 @@ let animalsdata =[
     price: 7000,
     img:"pics/horses.jpg",
     alternate:"picture of a red, a black, and a white horse in a field",
-    description: "beautiful horses. many breeds and colors.  great quality and temperment, raised to be family pets. many are broke to ride, though for fulls or yearlings you're on your own."}
+    description: "beautiful horses. many breeds and colors.  great quality and temperment, raised to be family pets. many are broke to ride, though for fulls or yearlings you're on your own."},
+
+    {id:"animalsbuffalo",
+    name:"buffalo",
+    price: 4000,
+    img:"pics/buffalo.jpg",
+    alternate:"picture of a buffalo",
+    description: "pwerfull all american bison, heard animal will want two or more. have a live piece of american history on your land."},
+
+    {id:"animalsemu",
+    name:"emu",
+    price: 200,
+    img:"pics/emew.jpg",
+    alternate:"picture of an emu",
+    description: "large and entertaining bird. It's a great deal, and easier to keep than other exotics i'm assuming."},
+
+    {id:"animalskoi",
+    name:"koi fish",
+    price: 1990,
+    img:"pics/koifish.jpg",
+    alternate:"picture of multiple koi fish",
+    description: "generously cheap price for great quality fish. many colors and patterns all for the same low price."},
+
+    {id: "animalsflamingo",
+    name:"flamingo", 
+    price: 3000, 
+    img: "pics/aiflamingo.jpg",
+    alternate:"image of an AI flamingo",
+    description: "elegant bird is the perfect addition for a backyard pond"},
+
+    {id:"animalscat",
+    name:"house cat",
+    price: 0,
+    img:"pics/cat.jpg",
+    alternate:"picture of orange cat",
+    description: "mostly tamed house cats. wide range of personalities. we have too many, please just take them. they're free. take a couple."},
+
+    {id:"animalsmacaw",
+    name:"macaw",
+    price: 10000,
+    img:"pics/macaw.jpg",
+    alternate:"picture of a blue macaw",
+    description: "beautiful inteligent bird can learn to speak and learn many tricks can be a lifelong close companion. why bother with dogs, your rich now."},
 ]
+
+  /*  {id:"",
+    name:"",
+    price: 0,
+    img:"",
+    alternate:"",
+    description: ""},   */

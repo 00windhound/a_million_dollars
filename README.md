@@ -10,3 +10,5 @@ so while im working on the shopping cart i everything went from working great to
  i was giong to start moving some data around to get something to generate and i noticed this "working tree" a quick google search didnt answer why it was there but as soon as i save my work it went away and the shop was working like normal, about a half a second after ranting on here that i can't fix it.. i hate technology.
 
  i have a lot to do, i am just struggling to find the focus to do it. but i want to make the store fully fonctional and add a footer to make suggestions of what to add. and decide if i want the main page to have button links to each catagory or still have dropdown catagories. the drop down was the origional idea but after working on it, it might just be too messy to make. 
+
+i'm going to make a new js page for the home page and find the best way to manage the saved data, add a restart button, add cards to the home page to show what you own. finnaly get around to making all the cards that i want. and figure out how to add new catagories. now that im done with the tutorial i feel like i have what i need to make a pretty cool project.
