@@ -5,7 +5,8 @@ accountdisplay.innerHTML= account;
 let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
-console.log(basket)
+//console.log(basket)
+console.log(animalsdata) //so we have acess to this
 
 let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
@@ -17,9 +18,23 @@ calculation();
 let generatecart =()=>{
     if(basket.length !== 0){
         console.log("data!!!")
-        return shoppingcart.innerHTML= basket.map((x)=>{
+        return shoppingcart.innerHTML= basket.map((x)=>{ console.log(x)
+            let{id,item}=x;
+            let search= animalsdata.find((y)=>y.id ===id) || [];
             return `
-           <div>hellp</div>
+           <div class="cartitem">
+                <img width="100px" src=${search.img} alternate=${search.alternate}/>
+                <div class="details">
+                    <div class="titleprice">
+                        <h4>
+                            <p>${search.name}
+                            <p>${search.price}
+                        </h4>
+                        <button id="x">X</button>
+                    </div>
+                    <div class="cartbuttons"></div>
+                </div>
+           </div>
        `}).join("");
     }
     else{
