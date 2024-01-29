@@ -21,18 +21,26 @@ let generatecart =()=>{
         return shoppingcart.innerHTML= basket.map((x)=>{ console.log(x)
             let{id,item}=x;
             let search= animalsdata.find((y)=>y.id ===id) || [];
+            let{img,alternate,name,price}=search;
             return `
            <div class="cartitem">
-                <img width="100px" src=${search.img} alternate=${search.alternate}/>
+                <img width="100px" src=${img} alternate=${alternate}/>
                 <div class="details">
                     <div class="titleprice">
-                        <h4>
-                            <p>${search.name}
-                            <p>${search.price}
+                        <h4 class="titleprice2">
+                            <p>${name}
+                            <p class="cartprice">${price}
                         </h4>
-                        <button id="x">X</button>
+                        <button onclick="removeitem(${id})" id="x"><b>X</b></button>
                     </div>
-                    <div class="cartbuttons"></div>
+                    <div class="cartbuttons">
+                        <div class="pm">
+                            <button onclick="decrement(${id})" class="minus">-</button>
+                            <div id=${id} class="quantity" >${item}</div>
+                            <button onclick="increment(${id})" class="plus">+</button>
+                        </div>
+                    </div>
+                    <h3>$ ${item*search.price}</h3>
                 </div>
            </div>
        `}).join("");
@@ -44,6 +52,7 @@ let generatecart =()=>{
                             <button id="backtoshop">back to shop</button> </a>`
     }
 }
+
 generatecart(); 
 
 
@@ -59,6 +68,7 @@ let increment = (id) => {
     localStorage.setItem("joy",JSON.stringify(basket))
    /* console.log(basket);*/
     update(selecteditem.id);
+    generatecart();
 };
 
 let decrement = (id) => {
@@ -78,4 +88,40 @@ let update = (id) => {
     //console.log(search);
     document.getElementById(id).innerHTML = search.item;
     calculation();
+    totalbill();
 };
+
+let removeitem =(id)=>{
+let thing = id
+basket=basket.filter((x)=>x.id !== thing.id)
+localStorage.setItem("joy",JSON.stringify(basket));
+generatecart();
+totalbill();
+calculation();
+}
+
+let burnbutton = ()=>{
+    basket=[]
+    localStorage.setItem("joy",JSON.stringify(basket));
+    generatecart();
+    calculation();
+    
+}
+
+let totalbill =()=>{
+    if(basket.length !== 0){
+        let amount = basket.map((x)=>{
+            let{item,id}=x;
+            let search = animalsdata.find((y)=> y.id === id)|| [];
+            return item* search.price;
+        }).reduce((x,y)=>x+y,0);
+        label.innerHTML=
+        `<h2>total bill: $ ${amount}</h2>
+        <button class="checkout">checkout</button>
+        <button onclick="burnbutton()" class="emptycart">burn everything!</button>`;
+    }
+    else return;
+}
+
+totalbill();
+
