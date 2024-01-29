@@ -6,7 +6,8 @@ let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
 //console.log(basket)
-console.log(animalsdata) //so we have acess to this
+//console.log(animalsdata) //so we have acess to this
+let bill;
 
 let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
@@ -17,8 +18,8 @@ calculation();
 
 let generatecart =()=>{
     if(basket.length !== 0){
-        console.log("data!!!")
-        return shoppingcart.innerHTML= basket.map((x)=>{ console.log(x)
+        //console.log("data!!!")
+        return shoppingcart.innerHTML= basket.map((x)=>{
             let{id,item}=x;
             let search= animalsdata.find((y)=>y.id ===id) || [];
             let{img,alternate,name,price}=search;
@@ -115,9 +116,10 @@ let totalbill =()=>{
             let search = animalsdata.find((y)=> y.id === id)|| [];
             return item* search.price;
         }).reduce((x,y)=>x+y,0);
+        bill= amount;
         label.innerHTML=
-        `<h2>total bill: $ ${amount}</h2>
-        <button class="checkout">checkout</button>
+        `<h2 id="bill">total bill: $ ${amount}</h2>
+        <button onclick="checkout()" class="checkout">checkout</button>
         <button onclick="burnbutton()" class="emptycart">burn everything!</button>`;
     }
     else return;
@@ -125,3 +127,24 @@ let totalbill =()=>{
 
 totalbill();
 
+let owns= JSON.parse(localStorage.getItem("owned")) || [];
+let checkout =()=>{
+  //  let bill= document.getElementById(bill).innerHTML;
+    account= account-bill;
+    localStorage.setItem("monies",JSON.stringify(account))
+    accountdisplay.innerHTML= account;
+    owns.push(basket);
+    basket=[]
+    localStorage.setItem("joy",JSON.stringify(basket))
+    localStorage.setItem("owned",JSON.stringify(owns))
+generatecart()
+calculation()
+
+}
+console.log(owns);
+console.log(account);
+/* get owns into memory
+check if id is already in owns 
+if it is ,up the quantity else just push
+show owned items on home screen
+eventually deal with out of money or overdrawn */
