@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-
-
-
 button{
     cursor: pointer;
 }
@@ -18,8 +15,6 @@ button{
     border: 20px dotted rgb(76, 5, 158)
 
 }
-
-
 header{
     background-color:darkgrey;
     padding: 25px 60px;
@@ -34,6 +29,7 @@ header{
     border-radius: 5px;
     position: relative;
     padding: 15px;
+    text-decoration: none;
 }
 .totquantity{
 font-size: 16px;
@@ -43,6 +39,11 @@ top: -15px;
 right: -10px;
 padding: 9px;
 border-radius: 6px;
+color: white
+}
+.carticon{
+    color:rgb(165, 49, 204);
+    text-decoration: none;
 }
 .shop{
     display: grid;
@@ -69,7 +70,9 @@ border-radius: 6px;
 #cardcontainer{
     min-height: 100%; max-height: 370px; /*height 370px*/
 }
-#cardmain{overflow: auto; padding-bottom: 37px;}/*padding 37px*/
+#cardmain{
+    overflow: auto; padding-bottom: 37px;
+}/*padding 37px*/
 .details{
     padding: 5px;
     position:relative;
