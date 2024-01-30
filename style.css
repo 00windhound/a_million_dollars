@@ -202,3 +202,12 @@ color: red;
     font-size: 40px;
     height: 60px;
 }
+/*need to make the grid for multiple cards*/
+#owns{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
