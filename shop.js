@@ -1,16 +1,17 @@
 
 let accountdisplay = document.getElementById('account')
-let account= 1000000
-accountdisplay.innerHTML=account;
-localStorage.setItem("monies",JSON.stringify(account))
+//let account= 1000000
+
+//
 
 let shop = document.getElementById('shop');
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
-
+let account = JSON.parse(localStorage.getItem("monies"));
+accountdisplay.innerHTML=account;
 let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
 let carticon = document.getElementById('totquantity')
-//console.log(basket)
+console.log(account);
 
 
 
