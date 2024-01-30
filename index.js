@@ -2,6 +2,7 @@ let accountdisplay= document.getElementById("account");
 let account = JSON.parse(localStorage.getItem("monies"))
 let owns = JSON.parse(localStorage.getItem("owned"))
 let ownsarea= document.getElementById("owns");
+let go = document.getElementById("go")
 
 let setmonies =()=>{
     if (Object.is(account,null)){
@@ -14,6 +15,15 @@ let setmonies =()=>{
     };
 }
 
+let setowns = ()=>{
+    if(Object.is(owns,null)){
+        owns=[];
+        localStorage.setItem("owned",JSON.stringify(owns))
+    }
+    else return;
+}
+
+setowns();
 setmonies();
 
 console.log(account);
@@ -43,6 +53,8 @@ let generateowned= () => {
         }).join("")
     }
     else{
-        ownsarea.innerHTML=`<h1>you need to go shopping!</h1>`;
+        go.innerHTML=`<h1 id="goshopping">you need to go shopping!</h1>`;
     }
 }
+
+generateowned();

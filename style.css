@@ -10,7 +10,7 @@ button{
     font-size: 100px;
     border-radius: 10px;
     padding:30px;
-    border: 20px dotted rgb(76, 5, 158)
+    border: 20px dotted rgb(76, 5, 158);
 
 }
 header{
@@ -210,4 +210,13 @@ color: red;
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 10px;
+}
+#seeown{
+    text-align: center;
+    font-size: 2.5em;
+}
+#goshopping{
+    text-align: center;
+    font-size: 3.5em;
+    color: rgb(76, 5, 158);
 }

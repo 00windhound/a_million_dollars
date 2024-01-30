@@ -128,21 +128,39 @@ let totalbill =()=>{
 totalbill();
 
 let owns= JSON.parse(localStorage.getItem("owned")) || [];
+
 let checkout =()=>{
-  //  let bill= document.getElementById(bill).innerHTML;
+  
     account= account-bill;
     localStorage.setItem("monies",JSON.stringify(account))
     accountdisplay.innerHTML= account;
-    owns.push(basket);
+    //owns.push(basket);  need to check each thing in basket before pushing
+    
+    // in incremeent i was adding objects one at a time but 
+    //here maybe i need a loop to test each item one by one,
+    let i =0;
+    while(i<= basket.length){
+        let search= owns.find((x)=>x.id ===basket[i].id )
+        if(search[i] === undefined){ 
+            owns.push({id: basket[i].id,item: basket[i].item})
+        }
+        else{
+            search[i].item += 1;
+        }
+        i++
+    }
     basket=[]
     localStorage.setItem("joy",JSON.stringify(basket))
     localStorage.setItem("owned",JSON.stringify(owns))
-generatecart()
-calculation()
-
-}
-console.log(owns);
+    generatecart()
+    calculation()
+console.log("owns"+owns);
+console.log("basket"+ basket);
 console.log(account);
+}
+
+
+
 /* get owns into memory
 check if id is already in owns 
 if it is ,up the quantity else just push
