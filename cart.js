@@ -139,13 +139,13 @@ let checkout =()=>{
     // in incremeent i was adding objects one at a time but 
     //here maybe i need a loop to test each item one by one,
     let i =0;
-    while(i<= basket.length){
+    while(i<= basket.length-1){
         let search= owns.find((x)=>x.id ===basket[i].id )
-        if(search[i] === undefined){ 
+        if(search === undefined){ 
             owns.push({id: basket[i].id,item: basket[i].item})
         }
         else{
-            search[i].item += 1;
+            search[i].item += 1;//throwing an error. item is undefined
         }
         i++
     }
@@ -158,7 +158,8 @@ console.log("owns"+owns);
 console.log("basket"+ basket);
 console.log(account);
 }
-
+// i am damn close, the first basket goes in perfectly, but the else statement needs some work.
+// as long as i dont add any repeats it works perfectly
 
 
 /* get owns into memory
