@@ -29,8 +29,8 @@ let generatecart =()=>{
                 <div class="details">
                     <div class="titleprice">
                         <h4 class="titleprice2">
-                            <p>${name}
-                            <p class="cartprice">${price}
+                            <p>${name}</p>
+                            <p class="cartprice">${price}</p>
                         </h4>
                         <button onclick="removeitem(${id})" id="x"><b>X</b></button>
                     </div>

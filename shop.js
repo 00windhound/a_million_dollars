@@ -1,8 +1,6 @@
 
-let accountdisplay = document.getElementById('account')
-//let account= 1000000
+let accountdisplay = document.getElementById('account');
 
-//
 
 let shop = document.getElementById('shop');
 let basket = JSON.parse(localStorage.getItem("joy")) || [];

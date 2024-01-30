@@ -67,7 +67,7 @@ let animalsdata =[
     price: 3000, 
     img: "pics/aiflamingo.jpg",
     alternate:"image of an AI flamingo",
-    description: "elegant bird is the perfect addition for a backyard pond"},
+    description: "elegant bird is the perfect addition for a backyard pond. we totally have real birds. dont look at the picture too close. just take our word for it."},
 
     {id:"animalscat",
     name:"house cat",
