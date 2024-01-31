@@ -42,9 +42,8 @@ let generateowned= () => {
                         <div class="ownedtitle"><b>${name}</b>
                         </div>
                         <div class="ownedamount">
-                            count 
-                            <div class="ownednumber"><b>${item}</b>
-                            </div> 
+                            <span id="count">count</span> 
+                            <div class="ownednumber"><b>${item}</b></div> 
                         </div>
                     </div>
                     <img width="300px" src="${img}" alt="${alternate}"></img>

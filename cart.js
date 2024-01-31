@@ -41,7 +41,7 @@ let generatecart =()=>{
                             <button onclick="increment(${id})" class="plus">+</button>
                         </div>
                     </div>
-                    <h3>$ ${item*search.price}</h3>
+                    <h3 id="itemtimesprice">$ ${item*price}</h3>
                 </div>
            </div>
        `}).join("");
@@ -145,7 +145,7 @@ let checkout =()=>{
             owns.push({id: basket[i].id,item: basket[i].item})
         }
         else{
-            search[i].item += 1;//throwing an error. item is undefined
+            search.item += basket[i].item;//need to know how many your trying to buy
         }
         i++
     }
@@ -162,8 +162,6 @@ console.log(account);
 // as long as i dont add any repeats it works perfectly
 
 
-/* get owns into memory
-check if id is already in owns 
-if it is ,up the quantity else just push
-show owned items on home screen
-eventually deal with out of money or overdrawn */
+/* 
+eventually deal with out of money or overdrawn 
+center buttons in cart*/
