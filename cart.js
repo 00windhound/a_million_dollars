@@ -131,32 +131,34 @@ let owns= JSON.parse(localStorage.getItem("owned")) || [];
 
 let checkout =()=>{
   
-    account= account-bill;
-    localStorage.setItem("monies",JSON.stringify(account))
-    accountdisplay.innerHTML= account;
-    //owns.push(basket);  need to check each thing in basket before pushing
-    
-    // in incremeent i was adding objects one at a time but 
-    //here maybe i need a loop to test each item one by one,
-    let i =0;
-    while(i<= basket.length-1){
-        let search= owns.find((x)=>x.id ===basket[i].id )
-        if(search === undefined){ 
-            owns.push({id: basket[i].id,item: basket[i].item})
+    newaccount= account-bill;
+    if(newaccount >= 0){
+        localStorage.setItem("monies",JSON.stringify(newaccount))
+        accountdisplay.innerHTML= newaccount;
+
+        let i =0;
+        while(i<= basket.length-1){
+            let search= owns.find((x)=>x.id ===basket[i].id )
+            if(search === undefined){ 
+                owns.push({id: basket[i].id,item: basket[i].item})
+            }
+            else{
+                search.item += basket[i].item;//need to know how many your trying to buy
+            }
+            i++
         }
-        else{
-            search.item += basket[i].item;//need to know how many your trying to buy
-        }
-        i++
+        basket=[]
+        localStorage.setItem("joy",JSON.stringify(basket))
+        localStorage.setItem("owned",JSON.stringify(owns))
+        generatecart()
+        calculation()
+        console.log("owns"+owns);
+        console.log("basket"+ basket);
+        console.log(newaccount);
     }
-    basket=[]
-    localStorage.setItem("joy",JSON.stringify(basket))
-    localStorage.setItem("owned",JSON.stringify(owns))
-    generatecart()
-    calculation()
-console.log("owns"+owns);
-console.log("basket"+ basket);
-console.log(account);
+    else{
+        alert("you don't have enough money!!! "+newaccount);
+    }
 }
 // i am damn close, the first basket goes in perfectly, but the else statement needs some work.
 // as long as i dont add any repeats it works perfectly

@@ -250,3 +250,12 @@ color: red;
     font-size: 3.5em;
     color: rgb(76, 5, 158);
 }
+@media (max-width:1309px){
+    #owns{ grid-template-columns: repeat(3, 300px);}
+}
+@media (max-width:980px ){
+    #owns{ grid-template-columns: repeat(2, 300px);}
+}
+@media (max-width: 660px){
+    #owns{ grid-template-columns: repeat(1, 300px);}
+}
