@@ -32,7 +32,7 @@ let generateshop =()=>{
                 </div>
                 <div class="pq">
                     <h2>$ ${price}</h2>
-                    <div class="pm">
+                    <div class="shoppm">
                         <button onclick="decrement(${id})" class="minus">-</button>
                         <div id=${id} class="quantity" >${search.item === undefined ? 0: search.item}</div>
                         <button onclick="increment(${id})" class="plus">+</button>
