@@ -53,10 +53,11 @@ let generateowned= () => {
         }).join("")
     }
     else{
-        go.innerHTML=`<h1 id="goshopping">you need to go shopping!</h1>`;
+        ownsarea.innerHTML='';
+        go.innerHTML=`<h1 id="goshopping">you need to go shopping!</h1>`; // it prints it but does not clear what was already there
     }
 }
-
+// styling needs to be different based on what if its cards or go shopping
 generateowned();
 
 let reset =() => {
