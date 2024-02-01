@@ -1,8 +1,9 @@
 let accountdisplay= document.getElementById("account");
-let account = JSON.parse(localStorage.getItem("monies"))
-let owns = JSON.parse(localStorage.getItem("owned"))
+let account = JSON.parse(localStorage.getItem("monies"));
+let owns = JSON.parse(localStorage.getItem("owned"));
 let ownsarea= document.getElementById("owns");
-let go = document.getElementById("go")
+let go = document.getElementById("go");
+let cart = JSON.parse(localStorage.getItem("joy"));
 
 let setmonies =()=>{
     if (Object.is(account,null)){
@@ -57,3 +58,16 @@ let generateowned= () => {
 }
 
 generateowned();
+
+let reset =() => {
+owns = []
+cart = []
+account = 1000000;
+
+localStorage.setItem("owned",JSON.stringify(owns))
+localStorage.setItem("joy",JSON.stringify(cart))
+localStorage.setItem("monies",JSON.stringify(account))
+
+accountdisplay.innerHTML= account;
+generateowned(); //this is not getting called. account and storage was reset.
+}
