@@ -5,19 +5,22 @@ let accountdisplay = document.getElementById('account');
 let shop = document.getElementById('shop');
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
 let account = JSON.parse(localStorage.getItem("monies"));
+let catagory = JSON.parse(localStorage.getItem("catagory"));
 accountdisplay.innerHTML=account;
 let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
 let carticon = document.getElementById('totquantity')
 console.log(account);
+let print= null;
 
-
-
+// figure out how to use catagory to decide which array to print
+// cart will need to be able to search all catagoories
+// if else to seeif its this name than set data to equal this array
 
 
 
 let generateshop =()=>{ 
-    return (shop.innerHTML= animalsdata.map((x)=>{
+    return (shop.innerHTML= print.map((x)=>{
         let { id, name, price, img, alternate, description}=x; // error in the cart
         let search = basket.find((x)=>x.id ===id) || [] 
         return `
@@ -44,7 +47,18 @@ let generateshop =()=>{
     
 };
 
-generateshop();
+let chosecatagory =() =>{
+    if(catagory === "linktoanimals"){
+        print= animalsdata;
+        generateshop();
+    }
+    else{
+        print= housesdata;
+        generateshop();
+    }
+}
+
+chosecatagory();
 
 let increment = (id) => {
     let selecteditem = id;
