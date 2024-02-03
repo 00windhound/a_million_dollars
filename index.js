@@ -75,8 +75,9 @@ generateowned(); //this is not getting called. account and storage was reset.
 }
 
 let savecatagory =(event) =>{
-    catagory= event.target.id;
+    catagory= event.target.id; // returning a blank string
     console.log(event.target);
+    console.log(catagory)
     localStorage.setItem("catagory",JSON.stringify(catagory));
     window.location.href = "animals.html";
 }
