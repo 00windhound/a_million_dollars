@@ -9,6 +9,7 @@ let basket = JSON.parse(localStorage.getItem("joy")) || [];
 //console.log(animalsdata) //so we have acess to this
 let bill;
 
+
 let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
 carticon[0].innerHTML = (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));

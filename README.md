@@ -16,3 +16,5 @@ i'm going to make a new js page for the home page and find the best way to manag
 so one home page one shop page and one generate shop function.
 what button you press on the home page will take you to the next page and pass the argument of what catagory chosen. argument will have to be put in storage. in shop will have to pull catagory from storage and either
 pass as argument in the generate shop function or name a variable to use 
+
+so i need to rework the footers on the cards for the diferent shaped pictures and i need to research how to make all the items show in the cart.
