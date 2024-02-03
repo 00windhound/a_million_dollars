@@ -84,6 +84,50 @@ let animalsdata =[
     description: "beautiful inteligent bird can learn to speak and learn many tricks can be a lifelong close companion. why bother with dogs, your rich now."},
 ]
 
+let housesdata = [
+
+  {id:"homeidaho",
+    name:"home",
+    price: 495000,
+    img:"pics/495,000.webp",
+    alternate:"house with snow in front",
+    description: "4 bed 3 bath semi fenced spacous yard. 1 car garadge."},
+
+    {id:"lilred",
+    name:"cute lil red",
+    price: 290000,
+    img:"pics/cutelilredhouse.webp",
+    alternate:"red house",
+    description: "3 bed 3 bath. 1 acre lot. seperate 2 car gradge. built in the 20s.. as in a hundred years ago."},
+
+    {id:"bluehouse",
+    name:"blue house",
+    price: 475000,
+    img:"pics/bluehouse.webp",
+    alternate:"blue house",
+    description: "beaautiful 3 bed 3 bath. 2 car garadge. 2 story plus basement."},
+
+    {id:"cabin",
+    name:"cabin",
+    price: 285000,
+    img:"pics/cabin.webp",
+    alternate:"aincent cabin in a birch forest",
+    description: "2 bed 2 bath. 40 acre lot. aincent. plenty of space for allll of the animals. could get away with growing weed or murder out here."},
+
+    {id:"obsurd",
+    name:"house",
+    price: 578800,
+    img:"pics/obsurd.webp",
+    alternate:"plain house",
+    description: "2 bed 1 bath. fenced in back yard. fine. price is a bit obsurd if you ask me."},
+
+    {id:"style",
+    name:"modern style",
+    price: 975000,
+    img:"pics/style.webp",
+    alternate:"modern looking house",
+    description: "if you want the most stylish home and not a damn thing else, this is the one for you! 4 bed 4 bath island with a sink, masive back patio, spiral staircase and all."},
+]
   /*  {id:"",
     name:"",
     price: 0,
