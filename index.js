@@ -4,6 +4,7 @@ let owns = JSON.parse(localStorage.getItem("owned"));
 let ownsarea= document.getElementById("owns");
 let go = document.getElementById("go");
 let cart = JSON.parse(localStorage.getItem("joy"));
+let catagory = null;
 
 let setmonies =()=>{
     if (Object.is(account,null)){
@@ -72,3 +73,13 @@ localStorage.setItem("monies",JSON.stringify(account))
 accountdisplay.innerHTML= account;
 generateowned(); //this is not getting called. account and storage was reset.
 }
+
+let savecatagory =(event) =>{
+    catagory= event.target.id;
+    console.log(event.target);
+    localStorage.setItem("catagory",JSON.stringify(catagory));
+    window.location.href = "animals.html";
+}
+
+document.getElementById("linktoanimals").addEventListener("click", savecatagory)
+document.getElementById("linktohomes").addEventListener("click",savecatagory)

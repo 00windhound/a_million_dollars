@@ -12,3 +12,7 @@ so while im working on the shopping cart i everything went from working great to
  i have a lot to do, i am just struggling to find the focus to do it. but i want to make the store fully fonctional and add a footer to make suggestions of what to add. and decide if i want the main page to have button links to each catagory or still have dropdown catagories. the drop down was the origional idea but after working on it, it might just be too messy to make. 
 
 i'm going to make a new js page for the home page and find the best way to manage the saved data, add a restart button, add cards to the home page to show what you own. finnaly get around to making all the cards that i want. and figure out how to add new catagories. now that im done with the tutorial i feel like i have what i need to make a pretty cool project.
+
+so one home page one shop page and one generate shop function.
+what button you press on the home page will take you to the next page and pass the argument of what catagory chosen. argument will have to be put in storage. in shop will have to pull catagory from storage and either
+pass as argument in the generate shop function or name a variable to use 
