@@ -46,8 +46,8 @@ let generatecart =()=>{
                 </div>
            </div>
        `}).join("");
-    }
-    else{
+            }
+            else{
         shoppingcart.innerHTML = ``;
         label.innerHTML= `<h2 id="cartisempty"> cart is empty </h2>
                             <a href="index.html" >

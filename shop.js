@@ -27,19 +27,20 @@ let generateshop =()=>{
         <div id=productid${id} class="cards">
             <div id="cardcontainer">
                 <div id="cardmain">
-                <img width="220" alt="${alternate}" src=${img}>
-                    <div class="details">
+                    <img width="220" alt="${alternate}" src=${img}>
+                    <div class="carddetails">
                         <h3>${name}</h3>
                         <p>${description}</p>
                     </div>
                 </div>
-                <div class="pq">
-                    <h2>$ ${price}</h2>
-                    <div class="shoppm">
-                        <button onclick="decrement(${id})" class="minus">-</button>
-                        <div id=${id} class="quantity" >${search.item === undefined ? 0: search.item}</div>
-                        <button onclick="increment(${id})" class="plus">+</button>
-                    </div>
+            </div>
+            <div class="cardfooter">
+                <h2>$ ${price}</h2>
+                <div class="shoppm">
+                    <button onclick="decrement(${id})" class="minus">-</button>
+                        <div id=${id} class="quantity" >${search.item === undefined ? 0: search.item}
+                        </div>
+                    <button onclick="increment(${id})" class="plus">+</button>
                 </div>
             </div>
         </div>`;
