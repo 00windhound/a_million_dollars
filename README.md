@@ -18,3 +18,14 @@ what button you press on the home page will take you to the next page and pass t
 pass as argument in the generate shop function or name a variable to use 
 
 so i need to rework the footers on the cards for the diferent shaped pictures and i need to research how to make all the items show in the cart.
+
+so i am completely stumped.
+i need to search all arrays for each thing in the cart and then print out their cards. ill search each item one at a time if its in one array ill push the data or the location to a new group else ill check the next array.
+then once i have the data from all items ill print the cards.
+
+check if first item is in array. if not ill check the next array else ill print the card and go back to function thatll pick the next item. 
+
+first function tests if there are items in basket if so thenit will see if its count has reached the basket length add 1 to count and start next function else it will print the cart empty message. the second function will find the item by searching each catagory and if its empty it will search the next catagory
+
+what about saving the catagory in local storage 
+merge all catagories into one giang list to search
