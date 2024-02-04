@@ -5,6 +5,7 @@ let ownsarea= document.getElementById("owns");
 let go = document.getElementById("go");
 let cart = JSON.parse(localStorage.getItem("joy"));
 let catagory = null;
+let alldata = animalsdata.concat(housesdata);
 
 let setmonies =()=>{
     if (Object.is(account,null)){
@@ -36,7 +37,7 @@ let generateowned= () => {
     if(owns.length !== 0){
         return ownsarea.innerHTML= owns.map((x)=>{
             let {id,item}=x;
-            let search=animalsdata.find((y)=>y.id === id) || [];
+            let search=alldata.find((y)=>y.id === id) || [];
             let {img,alternate,name}= search;
             return`
                 <div class="ownedcards" id="${id}">

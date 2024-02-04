@@ -1,3 +1,7 @@
+// let alldata = animalsdata.concat(housesdata);
+// said it cant find animals
+
+
 let animalsdata =[
     {id: "animalslion", 
     name:"lion", 

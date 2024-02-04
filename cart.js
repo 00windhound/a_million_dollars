@@ -8,7 +8,7 @@ let basket = JSON.parse(localStorage.getItem("joy")) || [];
 //console.log(basket)
 //console.log(animalsdata) //so we have acess to this
 let bill;
-
+let alldata= animalsdata.concat(housesdata);
 
 let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
@@ -22,7 +22,7 @@ let generatecart =()=>{
         //console.log("data!!!")
         return shoppingcart.innerHTML= basket.map((x)=>{
             let{id,item}=x;
-            let search= animalsdata.find((y)=>y.id ===id) || [];
+            let search= alldata.find((y)=>y.id ===id) || [];
             let{img,alternate,name,price}=search;
             return `
            <div class="cartitem">
@@ -114,7 +114,7 @@ let totalbill =()=>{
     if(basket.length !== 0){
         let amount = basket.map((x)=>{
             let{item,id}=x;
-            let search = animalsdata.find((y)=> y.id === id)|| [];
+            let search = alldata.find((y)=> y.id === id)|| [];
             return item* search.price;
         }).reduce((x,y)=>x+y,0);
         bill= amount;
