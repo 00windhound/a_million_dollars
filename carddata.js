@@ -108,7 +108,7 @@ let housesdata = [
     description: "3 bed 3 bath. 1 acre lot. seperate 2 car gradge. built in the 20s.. as in a hundred years ago."},
 
     {id:"homeblue",
-    name:"blue house",
+    name:"house",
     price: 475000,
     img:"pics/bluehouse.webp",
     alternate:"blue house",
@@ -134,6 +134,13 @@ let housesdata = [
     img:"pics/style.webp",
     alternate:"modern looking house",
     description: "if you want the most stylish home and not a damn thing else, this is the one for you! 4 bed 4 bath island with a sink, masive back patio, spiral staircase and all."},
+
+    {id:"homesbrick",
+    name:"brick house",
+    price: 500000,
+    img:"pics/brickhome.webp",
+    alternate:"beautiful brick home",
+    description:"6 bed 3 bath. 2 car garadge. absolutly beautifull, worth every penny."},
 
 ]
 

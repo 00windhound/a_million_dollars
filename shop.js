@@ -46,11 +46,11 @@ let generateshop =()=>{
 };
 
 let chosecatagory =() =>{
-    if(catagory === "linktoanimals"){
+    if(catagory === "linktoanimals" || catagory === "backanimals"){
         print= animalsdata;
         generateshop();
     }
-    else if(catagory === "linktohomes"){
+    else if(catagory === "linktohomes" || catagory === "backhomes"){
         print= housesdata;
         generateshop();
     }

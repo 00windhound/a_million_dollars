@@ -11,11 +11,20 @@ let bill;
 //let alldata= animalsdata.concat(housesdata);
 
 let calculation = ()=>{
-    let carticon = document.getElementsByClassName("totquantity");
-carticon[0].innerHTML = (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
+    let carticon = document.getElementById("totalquantity");
+carticon.innerHTML = (basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
 };
 
 calculation();
+
+let chosecatagory =(event) =>{
+    catagory= event.target.id;
+    console.log(event.target);
+    console.log(catagory)
+    localStorage.setItem("catagory",JSON.stringify(catagory));
+    window.location.href = "shop.html";
+}
+
 
 let generatecart =()=>{
     if(basket.length !== 0){
@@ -57,6 +66,9 @@ let generatecart =()=>{
                                 <button id="backhomes">shop homes</button>
                                 <button id="backtoys">shop toys</button>
                             </div>`
+                            document.getElementById("backanimals").addEventListener("click", chosecatagory)
+                            document.getElementById("backhomes").addEventListener("click",chosecatagory)
+                            document.getElementById("backtoys").addEventListener("click",chosecatagory)   
     }
 }
 
@@ -174,14 +186,3 @@ let checkout =()=>{
 eventually deal with out of money or overdrawn 
 center buttons in cart*/
 
-let chosecatagory =(event) =>{
-    catagory= event.target.id;
-    console.log(event.target);
-    console.log(catagory)
-    localStorage.setItem("catagory",JSON.stringify(catagory));
-    window.location.href = "shop.html";
-}
-
-document.getElementById("backanimals").addEventListener("click", chosecatagory)
-document.getElementById("backhomes").addEventListener("click",chosecatagory)
-document.getElementById("backtoys").addEventListener("click",chosecatagory)
