@@ -35,4 +35,4 @@ i ended up finding the command to merge the arrays into one array that is easy t
 i want to add a third catagory for big toys itll have things like motorcycles boats jetskies snowmobiles 4wheelers dirtbikes small planes slingshots.
 i need to remake my functions to make more sense, like calculate first then display everything
 
-maybe add a way to gamble.
+maybe add a way to gamble. add catagory buttons to the cart is empty screen

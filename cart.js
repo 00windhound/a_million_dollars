@@ -51,7 +51,12 @@ let generatecart =()=>{
         shoppingcart.innerHTML = ``;
         label.innerHTML= `<h2 id="cartisempty"> cart is empty </h2>
                             <a href="index.html" >
-                            <button id="backtoshop">back to home</button> </a>`
+                            <button id="backtohome">back to home</button> </a>
+                            <div id="backcatagories">
+                                <button id="backanimals">shop animals</button>
+                                <button id="backhomes">shop homes</button>
+                                <button id="backtoys">shop toys</button>
+                            </div>`
     }
 }
 
@@ -168,3 +173,15 @@ let checkout =()=>{
 /* 
 eventually deal with out of money or overdrawn 
 center buttons in cart*/
+
+let chosecatagory =(event) =>{
+    catagory= event.target.id;
+    console.log(event.target);
+    console.log(catagory)
+    localStorage.setItem("catagory",JSON.stringify(catagory));
+    window.location.href = "shop.html";
+}
+
+document.getElementById("backanimals").addEventListener("click", chosecatagory)
+document.getElementById("backhomes").addEventListener("click",chosecatagory)
+document.getElementById("backtoys").addEventListener("click",chosecatagory)

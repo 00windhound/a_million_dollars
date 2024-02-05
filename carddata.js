@@ -67,21 +67,28 @@ let animalsdata =[
     price: 3000, 
     img: "pics/aiflamingo.jpg",
     alternate:"image of an AI flamingo",
-    description: "elegant bird is the perfect addition for a backyard pond. we totally have real birds. dont look at the picture too close. just take our word for it."},
+    description:"elegant bird is the perfect addition for a backyard pond. we totally have real birds. dont look at the picture too close. just take our word for it."},
 
     {id:"animalscat",
     name:"house cat",
     price: 0,
     img:"pics/cat.jpg",
     alternate:"picture of orange cat",
-    description: "mostly tamed house cats. wide range of personalities. we have too many, please just take them. they're free. take a couple."},
+    description:"mostly tamed house cats. wide range of personalities. we have too many, please just take them. they're free. take a couple."},
 
     {id:"animalsmacaw",
     name:"macaw",
     price: 10000,
     img:"pics/macaw.jpg",
     alternate:"picture of a blue macaw",
-    description: "beautiful inteligent bird can learn to speak and learn many tricks can be a lifelong close companion. why bother with dogs, your rich now."},
+    description:"beautiful inteligent bird can learn to speak and learn many tricks can be a lifelong close companion. why bother with dogs, your rich now."},
+
+    {id:"animalswallaby",
+    name:"wallaby",
+    price: 2000,
+    img:"pics/wallaby.jpg",
+    alternate:"a cute wallaby",
+    description:"the only thing out of australia that doesnt want to kill you. this adorable thing is a must have! looking at you dad!"},
 ]
 
 let housesdata = [
@@ -131,26 +138,26 @@ let housesdata = [
 ]
 
 let toydata =[
-  {id:"jetski",
+  {id:"toyjetski",
     name:"jet ski",
     price: 13300,
     img:"pics/jetski.jpg",
     alternate:"side view of jetski",
-    description: "the funnest thing on water!!"},
+    description:"the funnest thing on water!!"},
 
-    {id:"slingshot",
+    {id:"toyslingshot",
     name:"slingshot",
     price: 31000,
-    img:"slingshot",
+    img:"pics/slingshot.jpg",
     alternate:"a slingshot car",
-    description: "show off this car on 3 wheels and be the envy of the city. "},
+    description:"show off this car on 3 wheels and be the envy of the city. "},
 
-    {id:"bike",
+    {id:"toybike",
     name:"street bike",
     price: 10000,
     img:"pics/bike.jpg",
     alternate:"a streetbike ",
-    description: "enjoy the speed, power, and freedom of this bad boy."},
+    description:"enjoy the speed, power, and freedom of this bad boy."},
 ]
 
 
@@ -159,6 +166,6 @@ let toydata =[
     price: 0,
     img:"",
     alternate:"",
-    description: ""},   */
+    description:""},   */
 
     let alldata = animalsdata.concat(housesdata, toydata);

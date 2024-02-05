@@ -140,6 +140,7 @@ color: white
     width: 30px;
     height: 30px;
     background-color: rgb(214, 207, 249);
+    border-radius: 8px;
 }
 #itemtimesprice{
     text-align: center;
@@ -148,13 +149,14 @@ color: white
     width: 30px;
     height: 30px;
     background-color: rgb(214, 207, 249) ;
+    border-radius: 8px;
 }
 #label{
     text-align: center;
     font-size: 30px;color: rgb(22, 22, 22); 
     text-shadow: 3px 3px 7px rgb(65, 65, 65);
 }
-#backtoshop, .checkout,.emptycart{
+#backtohome, .checkout,.emptycart{
     text-align: center; 
     margin-top: 15px; 
     margin-bottom: 15px;
@@ -170,6 +172,9 @@ color: white
     grid-template-columns: repeat(2, 320px);
     justify-content: center;
     gap:15px;
+}
+.details{
+    margin-left: 10px;
 }
 .cartitem{
     border: 2px solid rgb(110, 110, 110);
