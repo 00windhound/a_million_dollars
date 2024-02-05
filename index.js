@@ -5,8 +5,8 @@ let ownsarea= document.getElementById("owns");
 let go = document.getElementById("go");
 let cart = JSON.parse(localStorage.getItem("joy"));
 let catagory = null;
-let alldata = animalsdata.concat(housesdata);
-
+//let alldata = animalsdata.concat(housesdata);
+  
 let setmonies =()=>{
     if (Object.is(account,null)){
         account= 1000000; // i only want this done once
@@ -75,13 +75,13 @@ accountdisplay.innerHTML= account;
 generateowned(); //this is not getting called. account and storage was reset.
 }
 
-let savecatagory =(event) =>{
-    catagory= event.target.id; // returning a blank string
+let chosecatagory =(event) =>{
+    catagory= event.target.id;
     console.log(event.target);
     console.log(catagory)
     localStorage.setItem("catagory",JSON.stringify(catagory));
-    window.location.href = "animals.html";
+    window.location.href = "shop.html";
 }
 
-document.getElementById("linktoanimals").addEventListener("click", savecatagory)
-document.getElementById("linktohomes").addEventListener("click",savecatagory)
+document.getElementById("linktoanimals").addEventListener("click", chosecatagory)
+document.getElementById("linktohomes").addEventListener("click",chosecatagory)

@@ -29,3 +29,10 @@ first function tests if there are items in basket if so thenit will see if its c
 
 what about saving the catagory in local storage 
 merge all catagories into one giang list to search
+
+i ended up finding the command to merge the arrays into one array that is easy to search.
+
+i want to add a third catagory for big toys itll have things like motorcycles boats jetskies snowmobiles 4wheelers dirtbikes small planes.
+i need to remake my functions to make more sense, like calculate first then display everything
+
+maybe add a way to gamble.

@@ -12,9 +12,6 @@ let shoppingcart= document.getElementById("shoppingcart");
 let carticon = document.getElementById('totquantity')
 console.log(account);
 let print= null;
-
-// figure out how to use catagory to decide which array to print
-// cart will need to be able to search all catagoories
 // if else to seeif its this name than set data to equal this array
 
 
@@ -94,8 +91,8 @@ let update = (id) => {
 };
 // change the update and calculate so it calcultes first and updates both numbers maybe
 let calculation = ()=>{
-    let carticon = document.getElementsByClassName("totquantity");
-  carticon[0].innerHTML=(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
+    let carticon = document.getElementById("totalquantity");
+  carticon.innerHTML=(basket.map((x)=>x.item).reduce((x,y)=>x+y,0));
 };
 
 calculation();

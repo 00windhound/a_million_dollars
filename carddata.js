@@ -1,7 +1,3 @@
-// let alldata = animalsdata.concat(housesdata);
-// said it cant find animals
-
-
 let animalsdata =[
     {id: "animalslion", 
     name:"lion", 
@@ -131,10 +127,38 @@ let housesdata = [
     img:"pics/style.webp",
     alternate:"modern looking house",
     description: "if you want the most stylish home and not a damn thing else, this is the one for you! 4 bed 4 bath island with a sink, masive back patio, spiral staircase and all."},
+
 ]
+
+let toydata =[
+  {id:"",
+    name:"",
+    price: 0,
+    img:"",
+    alternate:"",
+    description: ""},
+
+    {id:"",
+    name:"",
+    price: 0,
+    img:"",
+    alternate:"",
+    description: ""},
+
+    {id:"",
+    name:"",
+    price: 0,
+    img:"",
+    alternate:"",
+    description: ""},
+]
+
+
   /*  {id:"",
     name:"",
     price: 0,
     img:"",
     alternate:"",
     description: ""},   */
+
+    let alldata = animalsdata.concat(housesdata);

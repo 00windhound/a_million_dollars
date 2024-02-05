@@ -8,7 +8,7 @@ let basket = JSON.parse(localStorage.getItem("joy")) || [];
 //console.log(basket)
 //console.log(animalsdata) //so we have acess to this
 let bill;
-let alldata= animalsdata.concat(housesdata);
+//let alldata= animalsdata.concat(housesdata);
 
 let calculation = ()=>{
     let carticon = document.getElementsByClassName("totquantity");
