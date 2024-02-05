@@ -161,4 +161,4 @@ let toydata =[
     alternate:"",
     description: ""},   */
 
-    let alldata = animalsdata.concat(housesdata);
+    let alldata = animalsdata.concat(housesdata, toydata);

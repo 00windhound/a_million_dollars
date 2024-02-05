@@ -50,8 +50,12 @@ let chosecatagory =() =>{
         print= animalsdata;
         generateshop();
     }
-    else{
+    else if(catagory === "linktohomes"){
         print= housesdata;
+        generateshop();
+    }
+    else{
+        print= toydata;
         generateshop();
     }
 }
