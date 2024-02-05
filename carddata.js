@@ -131,26 +131,26 @@ let housesdata = [
 ]
 
 let toydata =[
-  {id:"",
-    name:"",
-    price: 0,
-    img:"",
-    alternate:"",
-    description: ""},
+  {id:"jetski",
+    name:"jet ski",
+    price: 13300,
+    img:"pics/jetski.jpg",
+    alternate:"side view of jetski",
+    description: "the funnest thing on water!!"},
 
-    {id:"",
-    name:"",
-    price: 0,
-    img:"",
-    alternate:"",
-    description: ""},
+    {id:"slingshot",
+    name:"slingshot",
+    price: 31000,
+    img:"slingshot",
+    alternate:"a slingshot car",
+    description: "show off this car on 3 wheels and be the envy of the city. "},
 
-    {id:"",
-    name:"",
-    price: 0,
-    img:"",
-    alternate:"",
-    description: ""},
+    {id:"bike",
+    name:"street bike",
+    price: 10000,
+    img:"pics/bike.jpg",
+    alternate:"a streetbike ",
+    description: "enjoy the speed, power, and freedom of this bad boy."},
 ]
 
 

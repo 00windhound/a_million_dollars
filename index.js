@@ -85,3 +85,4 @@ let chosecatagory =(event) =>{
 
 document.getElementById("linktoanimals").addEventListener("click", chosecatagory)
 document.getElementById("linktohomes").addEventListener("click",chosecatagory)
+document.getElementById("linktotoys").addEventListener("click",chosecatagory)
