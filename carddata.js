@@ -160,11 +160,18 @@ let toydata =[
     description:"show off this car on 3 wheels and be the envy of the city. "},
 
     {id:"toybike",
-    name:"street bike",
+    name:"motorcycle",
     price: 10000,
     img:"pics/bike.jpg",
-    alternate:"a streetbike ",
+    alternate:"a street bike ",
     description:"enjoy the speed, power, and freedom of this bad boy."},
+
+    {id:"toydirtbike",
+    name:"dirtbike",
+    price: 7800,
+    img:"pics/dirtbike.jpg",
+    alternate:"its blue.",
+    description:"for all the fun off road."},
 ]
 
 

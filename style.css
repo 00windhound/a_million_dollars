@@ -176,6 +176,7 @@ color: white
 }
 .backcatagories{
     text-align: center;
+    margin-top: 50px;
 }
 .shoppingcart{
     display: grid;
@@ -286,4 +287,3 @@ color: red;
 }
 @media (max-width: 660px){
     #owns{ grid-template-columns: repeat(1, 300px);}
-}
