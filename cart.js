@@ -5,6 +5,9 @@ accountdisplay.innerHTML= account;
 let label = document.getElementById("label");
 let shoppingcart= document.getElementById("shoppingcart");
 let basket = JSON.parse(localStorage.getItem("joy")) || [];
+let backanimals = document.getElementById("backanimals");
+let backhomes = document.getElementById("backhomes");
+let backtoys = document.getElementById("backtoys")
 //console.log(basket)
 //console.log(animalsdata) //so we have acess to this
 let bill;
@@ -24,6 +27,10 @@ let chosecatagory =(event) =>{
     localStorage.setItem("catagory",JSON.stringify(catagory));
     window.location.href = "shop.html";
 }
+
+document.getElementById("backanimals").addEventListener("click", chosecatagory)
+document.getElementById("backhomes").addEventListener("click",chosecatagory)
+document.getElementById("backtoys").addEventListener("click",chosecatagory)  
 
 
 let generatecart =()=>{
@@ -60,15 +67,8 @@ let generatecart =()=>{
         shoppingcart.innerHTML = ``;
         label.innerHTML= `<h2 id="cartisempty"> cart is empty </h2>
                             <a href="index.html" >
-                            <button id="backtohome">back to home</button> </a>
-                            <div id="backcatagories">
-                                <button id="backanimals">shop animals</button>
-                                <button id="backhomes">shop homes</button>
-                                <button id="backtoys">shop toys</button>
-                            </div>`
-                            document.getElementById("backanimals").addEventListener("click", chosecatagory)
-                            document.getElementById("backhomes").addEventListener("click",chosecatagory)
-                            document.getElementById("backtoys").addEventListener("click",chosecatagory)   
+                            <button id="backtohome">back to home</button> </a>`
+                            
     }
 }
 

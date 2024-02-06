@@ -86,10 +86,8 @@ color: white
 }
 #cardcontainer{
     min-height: 100%; 
-  /*  max-height: 370px; height 370px*/  
 }
 #cardmain{
-   /* overflow: auto; rn this would make the scroll bar go over the picture*/
     padding-bottom: 37px;
 }
 .carddetails{
@@ -175,6 +173,9 @@ color: white
     color:black;
     box-shadow: 0px 0px 4px 4px rgb(76, 5, 158);
     margin: 3px;
+}
+.backcatagories{
+    text-align: center;
 }
 .shoppingcart{
     display: grid;
