@@ -5,6 +5,19 @@
 button{
     cursor: pointer;
 }
+header{
+    background-color:darkgrey;
+    padding: 25px 60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+/*homepage*/
+
 #actions{
   /*  display: grid;*/
     justify-content: center;
@@ -23,26 +36,6 @@ button{
     font-weight: bold;
     min-width: 500px;
 }
-header{
-    background-color:darkgrey;
-    padding: 25px 60px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    align-items: center;
-}
-#cartbutton{
-    background-color: white;
-    font-size: 30px;
-    border-radius: 5px;
-    position: relative;
-    padding: 15px;
-    text-decoration: none;
-}
-#youwon{
-    text-align: center;
-}
 #reset{
     font-size: 2em;
     padding: 5px;
@@ -51,6 +44,21 @@ header{
     background-color: rgb(219, 180, 255);
     box-shadow: 0px 0px 4px 4px rgb(76, 5, 158);
 
+}
+#youwon{
+    text-align: center;
+}
+
+
+/*shop*/
+
+#cartbutton{
+    background-color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px;
+    text-decoration: none;
 }
 #totalquantity{
 font-size: 16px;
@@ -271,7 +279,6 @@ color: red;
 #count{
     font-size: .75em;
 }
-/*need to make the grid for multiple cards*/
 #owns{
     display: grid;
     grid-template-columns: repeat(4,300px);
@@ -288,6 +295,7 @@ color: red;
     text-align: center;
     font-size: 3.5em;
     color: rgb(76, 5, 158);
+    margin-bottom: 50px;
 }
 @media (max-width:1309px){
     #owns{ grid-template-columns: repeat(3, 300px);}
