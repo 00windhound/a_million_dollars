@@ -77,8 +77,6 @@ generateowned(); //this is not getting called. account and storage was reset.
 
 let chosecatagory =(event) =>{
     catagory= event.target.id;
-    console.log(event.target);
-    console.log(catagory)
     localStorage.setItem("catagory",JSON.stringify(catagory));
     window.location.href = "shop.html";
 }
@@ -86,3 +84,4 @@ let chosecatagory =(event) =>{
 document.getElementById("linktoanimals").addEventListener("click", chosecatagory)
 document.getElementById("linktohomes").addEventListener("click",chosecatagory)
 document.getElementById("linktotoys").addEventListener("click",chosecatagory)
+document.getElementById("linktoclothes").addEventListener("click",chosecatagory)

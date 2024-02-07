@@ -54,8 +54,12 @@ let chosecatagory =() =>{
         print= housesdata;
         generateshop();
     }
-    else{
+    else if(catagory === "linktotoys" || catagory === "backtoys"){
         print= toydata;
+        generateshop();
+    }
+    else{
+        print= clothesdata;
         generateshop();
     }
 }

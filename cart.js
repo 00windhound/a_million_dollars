@@ -22,8 +22,6 @@ calculation();
 
 let chosecatagory =(event) =>{
     catagory= event.target.id;
-    console.log(event.target);
-    console.log(catagory)
     localStorage.setItem("catagory",JSON.stringify(catagory));
     window.location.href = "shop.html";
 }
@@ -31,7 +29,7 @@ let chosecatagory =(event) =>{
 document.getElementById("backanimals").addEventListener("click", chosecatagory)
 document.getElementById("backhomes").addEventListener("click",chosecatagory)
 document.getElementById("backtoys").addEventListener("click",chosecatagory)  
-
+document.getElementById("backclothes").addEventListener("click",chosecatagory)  
 
 let generatecart =()=>{
     if(basket.length !== 0){

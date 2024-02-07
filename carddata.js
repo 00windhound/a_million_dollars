@@ -182,6 +182,10 @@ let toydata =[
 
   ]
 
+let  clothesdata =[
+
+]
+
 
   /*  {id:"",
     name:"",
@@ -190,4 +194,4 @@ let toydata =[
     alternate:"",
     description:""},   */
 
-    let alldata = animalsdata.concat(housesdata, toydata);
+    let alldata = animalsdata.concat(housesdata, toydata, clothesdata);

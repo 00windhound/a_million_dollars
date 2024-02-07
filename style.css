@@ -19,7 +19,7 @@ button{
     border-radius: 10px;
     padding:30px;
     border: 20px dotted rgb(76, 5, 158);
-    margin:25px 60px;
+    margin: 30px 30px;
     font-weight: bold;
     min-width: 500px;
 }
@@ -163,7 +163,7 @@ color: white
     font-size: 30px;color: rgb(22, 22, 22); 
     text-shadow: 3px 3px 7px rgb(65, 65, 65);
 }
-#backtohome, .checkout,.emptycart, #backanimals,#backhomes,#backtoys{
+#backtohome, .checkout,.emptycart,.back{
     text-align: center; 
     margin-top: 15px; 
     margin-bottom: 15px;
@@ -175,13 +175,14 @@ color: white
     padding: 6px;
     box-shadow: 0px 0px 4px 4px black;
 }
-#backanimals, #backhomes, #backtoys{
+.back{
     background-color: rgb(219, 180, 255);
     border: 3px solid rgb(76, 5, 158);
     border-radius: 8px;
     color:black;
     box-shadow: 0px 0px 4px 4px rgb(76, 5, 158);
     margin: 3px;
+    width: 130px;
 }
 .backcatagories{
     text-align: center;
