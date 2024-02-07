@@ -183,7 +183,33 @@ let toydata =[
   ]
 
 let  clothesdata =[
+  {id:"ashirt",
+    name:"cross blouse",
+    price: 65,
+    img:"pics/shirt65.jpg",
+    alternate:"black blouse",
+    description:"it's pretty. goes with everything."},
 
+    {id:"dress1",
+    name:"dress",
+    price: 70,
+    img:"pics/dress65.jpg",
+    alternate:"it's black and long",
+    description:"i'm so tired of writing descriptions"},
+
+    {id:"handbad",
+    name:"gucci bag",
+    price: 2550,
+    img:"pics/handbag.avif",
+    alternate:"its black ",
+    description:"you want it because its expensive."},
+
+    {id:"guccibag",
+    name:"gucci tote",
+    price: 1650,
+    img:"pics/guccibag.avif",
+    alternate:"idk",
+    description:"big enough for all your monies"},
 ]
 
 

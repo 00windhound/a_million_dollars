@@ -243,6 +243,8 @@ color: red;
    position:absolute;
    top: 68px;/*60*/
    right: 0px;
+   max-height: 300px;
+   overflow: auto;
 }
 .ownedheader{
     display: flex;
