@@ -101,7 +101,7 @@ let housesdata = [
     description: "4 bed 3 bath semi fenced spacous yard. 1 car garadge."},
 
     {id:"homelilred",
-    name:"cute lil red",
+    name:"lil red",
     price: 290000,
     img:"pics/cutelilredhouse.webp",
     alternate:"red house",
@@ -172,7 +172,15 @@ let toydata =[
     img:"pics/dirtbike.jpg",
     alternate:"its blue.",
     description:"for all the fun off road."},
-]
+
+    {id:"toyatv",
+    name:" 4 wheeler",
+    price: 9500,
+    img:"pics/atv.webp",
+    alternate:"its red",
+    description:"i don't know, it just looks fun."},
+
+  ]
 
 
   /*  {id:"",

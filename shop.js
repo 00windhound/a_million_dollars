@@ -26,7 +26,7 @@ let generateshop =()=>{
                 <div id="cardmain">
                     <img width="220" alt="${alternate}" src=${img}>
                     <div class="carddetails">
-                        <h3>${name}</h3>
+                        <h2>${name}</h2>
                         <p>${description}</p>
                     </div>
                 </div>

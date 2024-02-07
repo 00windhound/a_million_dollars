@@ -45,10 +45,10 @@ let generatecart =()=>{
                 <img width="100px" src=${img} alternate=${alternate}/>
                 <div class="details">
                     <div class="titleprice">
-                        <h4 class="titleprice2">
-                            <p>${name}</p>
+                       <!-- <h4 class="titleprice2">  -->
+                            <h3>${name}</h3>
                             <p class="cartprice">${price}</p>
-                        </h4>
+                       <!-- </h4> -->
                         <button onclick="removeitem(${id})" id="x"><b>X</b></button>
                     </div>
                     <div class="cartbuttons">
