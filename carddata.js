@@ -210,6 +210,34 @@ let  clothesdata =[
     img:"pics/guccibag.avif",
     alternate:"idk",
     description:"big enough for all your monies"},
+
+    /*{id:"blackjumpsuit",
+    name:"jumpsuit",
+    price: 2460,
+    img:"pics/jumpsuit2460.avif",
+    alternate:"jumpsuit",
+    description:""},
+
+    {id:"guccislippers",
+    name:"gucci slippers",
+    price: 980,
+    img:"pics/guccisloppers980.avif",
+    alternate:"slippers",
+    description:""},*/
+
+    {id:"guccisandle",
+    name:"sandles",
+    price: 780,
+    img:"pics/guccisandal780.webp",
+    alternate:"gucci sandle",
+    description:"gucci brown leather sandles."},
+
+    {id:"sweater",
+    name:"sweater",
+    price: 308,
+    img:"pics/sweater308.avif",
+    alternate:"sweater",
+    description:"compfy comfy comphie comphy ??? sweater."},
 ]
 
 
