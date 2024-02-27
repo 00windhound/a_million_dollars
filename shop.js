@@ -45,19 +45,33 @@ let generateshop =()=>{
     
 };
 
-let generatefashion = () =>{
+let generatefashion = () =>{//giving an error when i click up or down
     return(
         shop.innerHTML= print.map((x)=>{
-            let {id, name} = x;
+            let {id, name, price, img, alternate} = x;
             let search = basket.find((x)=>x.id === id) || []
             return`
-            
+        <div id=productid${id} class="fashioncard">
+            <div class="picname">
+                <h2 class="fashionname">${name}</h2>
+                <img width="220" alt="${alternate}" src="${img}">
+            </div>
+            <div class="fashionfooter">
+                <h2 class="fashionprice">${price}</h2>
+                <div class="buttonsammount">
+                    <button onclick="decrement(${id}" class="fashionminus">-</button>
+                        <div class="fashionammount" >${search.item === undefined ? 0: search.item}
+                        </div>
+                    <button onclick="increment(${id})" class="fashionplus">+</button>
+                </div>
+            </div>
+        </div>
             `
         }).join("")
     )
 }
 
-/*let chosecatagory =() =>{
+let chosecatagory =() =>{
     if(catagory === "linktoanimals" || catagory === "backanimals"){
         print= animalsdata;
         generateshop();
@@ -72,9 +86,9 @@ let generatefashion = () =>{
     }
     else{
         print= clothesdata;
-        generateshop();
+        generatefashion();
     }
-}*/
+}
 
 chosecatagory();
 

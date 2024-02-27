@@ -306,10 +306,13 @@ color: red;
 @media (max-width: 660px){
     #owns{ grid-template-columns: repeat(1, 300px);}
 }
+
+
 /* starting the fashion cards*/
 .fashioncard{
     border: solid 2px grey;
     border-radius: 5px;
+    min-height: 100%;
 
 }
 .fashionname{
@@ -327,6 +330,8 @@ color: red;
 .fashionminus, .fashionplus{
     width: 35px;
     height: 35px;
+    border-radius: 5px;
+    background-color: rgb(214, 207, 249);
 }
 .fashionammount{
     font-size: 3em;
@@ -334,6 +339,17 @@ color: red;
 .fashionprice{
     font-size: 3em;
     text-align: center;
-    height: 47px;
-    border: solid;
+    height: 46px;
+    /*border: solid;*/
+}
+.picname{
+padding-bottom: 87px;
+height: 295px;
+}
+.fashionfooter{
+    position: relative;
+    height: 87px;
+    margin-top: -89px;
+    clear: both;
+    /*border: solid blue;*/
 }
