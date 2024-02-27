@@ -3,7 +3,7 @@ let animalsdata =[
     name:"lion", 
     price: 6000, 
     img: "pics/ailion.jpg",
-    alternate:"image of an AI lion",
+    alternate:"an AI generated lion",
     description: "show that your the king with this powerfull beast! keep in mind the upkeep and possibly a great life insurance policy."},
 
     {id: "animalssnake",
@@ -17,7 +17,7 @@ let animalsdata =[
     name: "bunny",
     price: 25,
     img: "pics/bunny.jpg",
-    alternate:"picture of a black bunny",
+    alternate: "a black bunny",
     description:"adorable, easy, and kids love it"},
    
     {id:"animalscheetah",
@@ -31,28 +31,28 @@ let animalsdata =[
     name:"seahorse",
     price: 1000,
     img:"pics/aiseahorse.jpg",
-    alternate:"picture of a pink seahorse against purple corals",
+    alternate:"a pink seahorse against purple corals",
     description: "price includes the tank and basic equipment."},
 
     {id:"animalshorse",
     name:"horse",
     price: 7000,
     img:"pics/horses.jpg",
-    alternate:"picture of a red, a black, and a white horse in a field",
+    alternate:"a red, a black, and a white horse in a field",
     description: "beautiful horses. many breeds and colors.  great quality and temperment, raised to be family pets. many are broke to ride, though for fulls or yearlings you're on your own."},
 
     {id:"animalsbuffalo",
     name:"buffalo",
     price: 4000,
     img:"pics/buffalo.jpg",
-    alternate:"picture of a buffalo",
+    alternate:"a buffalo",
     description: "pwerfull all american bison, heard animal will want two or more. have a live piece of american history on your land."},
 
     {id:"animalsemu",
     name:"emu",
     price: 200,
     img:"pics/emew.jpg",
-    alternate:"picture of an emu",
+    alternate:"an emu",
     description: "large and entertaining bird. It's a great deal, and easier to keep than other exotics i'm assuming."},
 
     {id:"animalskoi",
@@ -93,7 +93,7 @@ let animalsdata =[
 
 let housesdata = [
 
-  {id:"homeidaho",
+  {id:"homesnow",
     name:"home",
     price: 495000,
     img:"pics/snow.webp",
@@ -123,10 +123,10 @@ let housesdata = [
 
     {id:"homeobsurd",
     name:"house",
-    price: 578800,
+    price: 368800,
     img:"pics/obsurd.webp",
     alternate:"plain house",
-    description: "2 bed 1 bath. fenced in back yard. fine. price is a bit obsurd if you ask me."},
+    description: "2 bed 1 bath. fenced in back yard. fine. could get for someone else"},
 
     {id:"homestyle",
     name:"modern style",

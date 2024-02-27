@@ -306,3 +306,34 @@ color: red;
 @media (max-width: 660px){
     #owns{ grid-template-columns: repeat(1, 300px);}
 }
+/* starting the fashion cards*/
+.fashioncard{
+    border: solid 2px grey;
+    border-radius: 5px;
+
+}
+.fashionname{
+    position: absolute;
+}
+.buttonsammount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   /* border: solid;*/
+    margin-top: 1px;
+    height: 40px;
+}
+.fashionminus, .fashionplus{
+    width: 35px;
+    height: 35px;
+}
+.fashionammount{
+    font-size: 3em;
+}
+.fashionprice{
+    font-size: 3em;
+    text-align: center;
+    height: 47px;
+    border: solid;
+}

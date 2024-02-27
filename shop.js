@@ -45,7 +45,19 @@ let generateshop =()=>{
     
 };
 
-let chosecatagory =() =>{
+let generatefashion = () =>{
+    return(
+        shop.innerHTML= print.map((x)=>{
+            let {id, name} = x;
+            let search = basket.find((x)=>x.id === id) || []
+            return`
+            
+            `
+        }).join("")
+    )
+}
+
+/*let chosecatagory =() =>{
     if(catagory === "linktoanimals" || catagory === "backanimals"){
         print= animalsdata;
         generateshop();
@@ -62,7 +74,7 @@ let chosecatagory =() =>{
         print= clothesdata;
         generateshop();
     }
-}
+}*/
 
 chosecatagory();
 
