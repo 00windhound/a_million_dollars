@@ -184,28 +184,28 @@ let toydata =[
 
 let  clothesdata =[
   {id:"ashirt",
-    name:"cross blouse",
+    name:"",
     price: 65,
     img:"pics/shirt65.jpg",
     alternate:"black blouse",
     description:"it's pretty. goes with everything."},
 
     {id:"dress1",
-    name:"dress",
+    name:"",
     price: 70,
     img:"pics/dress65.jpg",
     alternate:"it's black and long",
     description:"i'm so tired of writing descriptions"},
 
     {id:"handbad",
-    name:"gucci bag",
+    name:"gucci",
     price: 2550,
     img:"pics/handbag.avif",
     alternate:"its black ",
     description:"you want it because its expensive."},
 
     {id:"guccibag",
-    name:"gucci tote",
+    name:"gucci",
     price: 1650,
     img:"pics/guccibag.avif",
     alternate:"idk",
@@ -226,18 +226,39 @@ let  clothesdata =[
     description:""},*/
 
     {id:"guccisandle",
-    name:"sandles",
+    name:"gucci",
     price: 780,
     img:"pics/guccisandal780.webp",
     alternate:"gucci sandle",
     description:"gucci brown leather sandles."},
 
     {id:"sweater",
-    name:"sweater",
+    name:"",
     price: 308,
     img:"pics/sweater308.avif",
     alternate:"sweater",
     description:"compfy comfy comphie comphy ??? sweater."},
+
+    {id:"pinkfloral",
+    name:"",
+    price: 240,
+    img:"pics/pinkfloraldress.jpg",
+    alternate:" pink floral long dress",
+    description:""},
+
+    {id:"sparkleshoes",
+    name:"",
+    price: 300,
+    img:"pics/sparkleshoes.jpg",
+    alternate:"white sparkley high heels",
+    description:""},
+
+    {id:"goldslipper",
+    name:"",
+    price: 95,
+    img:"pics/goldslipper.jpg",
+    alternate:"solid gold slippers",
+    description:""},
 ]
 
 

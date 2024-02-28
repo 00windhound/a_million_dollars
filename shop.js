@@ -17,7 +17,8 @@ let print= null;
 
 
 let generateshop =()=>{ 
-    return (shop.innerHTML= print.map((x)=>{
+    return (
+        shop.innerHTML= print.map((x)=>{
         let { id, name, price, img, alternate, description}=x; // error in the cart
         let search = basket.find((x)=>x.id ===id) || [] 
         return `
@@ -41,7 +42,8 @@ let generateshop =()=>{
                 </div>
             </div>
         </div>`;
-    }).join(""));
+        }).join("")
+    );
     
 };
 

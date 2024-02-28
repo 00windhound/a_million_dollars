@@ -346,10 +346,14 @@ color: red;
 padding-bottom: 87px;
 height: 295px;
 }
+.picname img{
+max-height: 291px;
+}
 .fashionfooter{
     position: relative;
     height: 87px;
     margin-top: -89px;
     clear: both;
+    background-color: hsl(0, 0%, 80%);
     /*border: solid blue;*/
 }
