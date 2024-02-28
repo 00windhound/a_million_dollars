@@ -259,6 +259,41 @@ let  clothesdata =[
     img:"pics/goldslipper.jpg",
     alternate:"solid gold slippers",
     description:""},
+
+    {id:"roseblouse",
+    name:"",
+    price: 70,
+    img:"pics/roseblouse.jpg",
+    alternate:"shinney rose gold blouse",
+    description:""},
+
+    {id:"denimdress",
+    name:"",
+    price: 450,
+    img:"pics/denimdress.jpg",
+    alternate:"denim dress",
+    description:""},
+
+    {id:"shirtdress",
+    name:"",
+    price: 540,
+    img:"pics/shirtdress.jpg",
+    alternate:"",
+    description:""},
+
+    {id:"greenshirt",
+    name:"",
+    price: 200,
+    img:"pics/greenshirt.jpg",
+    alternate:"green shirt",
+    description:""},
+
+    {id:"whitebluedress",
+    name:"",
+    price: 650,
+    img:"pics/whitebluedress.jpg",
+    alternate:"marble pattern dress",
+    description:""},
 ]
 
 
