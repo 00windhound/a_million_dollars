@@ -45,7 +45,7 @@ let generateshop =()=>{
     
 };
 
-let generatefashion = () =>{//giving an error when i click up or down
+let generatefashion = () =>{//giving an error when i click up or down the id is messed up
     return(
         shop.innerHTML= print.map((x)=>{
             let {id, name, price, img, alternate} = x;
