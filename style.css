@@ -246,13 +246,15 @@ color: red;
     height: 368px;
     position: relative;
     background-color: hsl(0, 0%, 70%);
+    max-height: 376;
+    overflow:auto;
 }
 .ownedcards img{
    position:absolute;
    top: 68px;/*60*/
    right: 0px;
    max-height: 300px;
-   overflow: auto;
+   /*overflow: auto;*/
 }
 .ownedheader{
     display: flex;

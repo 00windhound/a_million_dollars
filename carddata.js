@@ -212,14 +212,14 @@ let  clothesdata =[
     description:"big enough for all your monies"},
 
     /*{id:"blackjumpsuit",
-    name:"jumpsuit",
+    name:"",
     price: 2460,
     img:"pics/jumpsuit2460.avif",
     alternate:"jumpsuit",
     description:""},
 
     {id:"guccislippers",
-    name:"gucci slippers",
+    name:"gucci",
     price: 980,
     img:"pics/guccisloppers980.avif",
     alternate:"slippers",
