@@ -88,7 +88,7 @@ let chosecatagory =() =>{
     }
     else{
         print= clothesdata;
-        generateshop();
+        generatefashion();
     }
 }
 
